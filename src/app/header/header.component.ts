@@ -8,10 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   currentLang: 'EN' | 'DE' = 'EN';
+  currentLangIcon = '/img/toggle_en.png';
 
-  setLanguage(lang: 'EN' | 'DE') {
-    this.currentLang = lang;
-    // Optional: Hier könntest du auch Angular i18n oder ngx-translate integrieren
-    console.log('Language switched to', lang);
+  toggleLanguage() {
+    this.currentLang = this.currentLang === 'EN' ? 'DE' : 'EN';
+    if (this.currentLang === 'EN') {
+      this.currentLangIcon = '/img/toggle_de.png';
+    } else {
+      this.currentLangIcon = '/img/toggle_en.png';
+    }
   }
 }

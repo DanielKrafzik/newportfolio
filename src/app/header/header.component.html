@@ -12,7 +12,6 @@
 
   <!-- Language switch -->
   <div class="lang-switch">
-    <button [class.active]="currentLang === 'EN'" (click)="setLanguage('EN')">EN</button>
-    <button [class.active]="currentLang === 'DE'" (click)="setLanguage('DE')">DE</button>
+    <img id="toggle-lang" [src]="currentLangIcon" alt="Toggle Language" (click)="toggleLanguage()">
   </div>
 </header>
