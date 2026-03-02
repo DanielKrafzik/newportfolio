@@ -4,4 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 25px;
+
+    button {
+        display: flex;
+        justify-self: end;
+        background-color: white;
+        padding: 5px 20px;
+        border-radius: 25px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
 }
