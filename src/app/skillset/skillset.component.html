@@ -11,9 +11,9 @@
         </div>
 
         <div class="skillset-downside">
-            <div class="skillset-icons">
-                <div class="skillset-icon">
-                </div>
+            <div class="skillset-icons" *ngFor="let skill of skills">
+                <img [src]="skill.icon" [alt]="skill.name">
+                <p>{{ skill.name }}</p>
             </div>
         </div>
         <img src="" alt="">

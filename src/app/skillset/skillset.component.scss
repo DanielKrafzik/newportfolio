@@ -7,3 +7,24 @@
     background-size: cover;
     background-position: center;
 }
+
+.skillset-downside {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    max-width: 800px;
+}
+
+.skillset-icons {
+    text-align: center;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    p {
+        margin-top: 10px;
+        color: white;
+    }
+}
