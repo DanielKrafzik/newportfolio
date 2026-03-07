@@ -8,6 +8,18 @@
     background-position: center;
 }
 
+.skillset-title {
+    color: white;
+
+    h1 {
+        background: url('/img/red_circle.png');
+        background-size: cover;
+        background-position: center;
+        padding: 20px 60px;
+        width: 150px;
+    }
+}
+
 .skillset-downside {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -27,4 +39,12 @@
         margin-top: 10px;
         color: white;
     }
+}
+
+.skillset-description {
+    background: url('/img/paperframe_skill.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 600px;
+    padding: 25px;
 }
