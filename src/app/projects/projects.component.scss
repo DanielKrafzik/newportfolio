@@ -3,4 +3,55 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+}
+
+.projects-upside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 50px;
+
+    div {
+        width: 50%;
+    }
+
+    img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.projects-downside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    flex-direction: row;
+
+        div {
+            width: 50%;
+        }
+
+    img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.projects-description {
+    img {
+        width: 30%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
 }
