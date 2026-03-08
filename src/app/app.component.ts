@@ -5,10 +5,11 @@ import { StartScreenComponent } from './start-screen/start-screen.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ColleaguesComponent } from './colleagues/colleagues.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, StartScreenComponent, AboutMeComponent, SkillsetComponent, ProjectsComponent],
+  imports: [RouterOutlet, HeaderComponent, StartScreenComponent, AboutMeComponent, SkillsetComponent, ProjectsComponent, ColleaguesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
