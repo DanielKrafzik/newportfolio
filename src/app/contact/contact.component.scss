@@ -26,15 +26,71 @@
 
 .contact-form {
     input {
-        padding: 10px 20px;
+        padding: 10px 0px;
         width: 100%;
         background-color: transparent;
         border: none;
         border-bottom: 2px solid #a5861a;
+        color: white;
+        font-size: 20px;
     }
 
     input::placeholder {
         color: white;
         font-size: 20px;
+    }
+
+    textarea {
+        padding: 10px 0px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #a5861a;
+        resize: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    textarea::placeholder {
+        color: white;
+        font-size: 20px;
+    }
+
+    button {
+        display: flex;
+        justify-self: end;
+        padding: 10px 50px;
+        background-color: transparent;
+        font-size: 20px;
+        color: #7e7e7e;
+        border: 2px solid #7e7e7e;
+        border-radius: 25px;
+        box-shadow: 3px 3px 0px #7e7e7e;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+.contact-form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        width: 20px;
+        height: 20px;
+        accent-color: #a5861a;
+        background-color: transparent;
+        border: 2px solid blue;
+        }
+
+    input:hover {
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 14px;
     }
 }
