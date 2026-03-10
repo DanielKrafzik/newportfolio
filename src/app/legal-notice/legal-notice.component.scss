@@ -1,0 +1,13 @@
+.legal-notice {
+    height: 100vh;
+    background-image: url('/img/skills_background.png');
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: white;
+    }
+}
