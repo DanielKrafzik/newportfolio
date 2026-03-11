@@ -3,10 +3,11 @@
     justify-content: space-around;
     align-items: center;
     height: 200px;
-    background-color: transparent;
+    background-image: url('/img/contact_background.png');
+    background-size: cover;
+    background-position: center bottom;
     color: #fff;
     font-family: Arial, sans-serif;
-    position: absolute;
     width: 100%;
 }
 
