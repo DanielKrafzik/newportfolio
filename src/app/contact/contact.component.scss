@@ -5,8 +5,9 @@
     background-position: center top;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 .contact-content {
@@ -16,6 +17,7 @@
     justify-content: space-between;
     gap: 40px;
     width: 80%;
+    margin-top: 20vh;
 }
 
 .contact-info {
@@ -93,4 +95,8 @@
     p {
         font-size: 14px;
     }
+}
+
+app-footer {
+    width: 100%;
 }
