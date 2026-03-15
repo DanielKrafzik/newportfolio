@@ -11,9 +11,14 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #3355ff;
+}
+
+.logo:hover {
+  color: #f7c518;
+  transition: color 0.2s, transform 0.2s ease;
 }
 
 .nav-links {
@@ -24,15 +29,9 @@
 
 .nav-links a {
   margin: 0 1rem;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
-  transition: color 0.2s;
-  transition: transform 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: #3355ff;
-  transform: scale(1.2);
 }
 
 .lang-switch button {
@@ -52,4 +51,86 @@
 
 #toggle-lang {
   cursor: pointer;
+}
+
+.hover-link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+#about-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  background: url("/img/about_hover.png") no-repeat;
+  width: 100%;
+  height: 0%;
+
+  background-size: cover;
+
+  transform-origin: top;
+  transition: height 0.3s ease;
+}
+
+#about-link:hover::after {
+  height: 75%;
+}
+
+#skills-link::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  background: url("/img/skills_hover.png") no-repeat;
+  width: 0%;
+  height: 75%;
+  background-size: cover;
+
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+#skills-link:hover::after {
+  width: 120%;
+}
+
+#projects-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  background: url("/img/projects_hover.png") no-repeat;
+  width: 0%;
+  height: 75%;
+
+  background-size: cover;
+
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+#projects-link:hover::after {
+  width: 100%;
+}
+
+#contact-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  background: url("/img/contacts_hover.png") no-repeat;
+  width: 0%;
+  height: 75%;
+
+  background-size: cover;
+
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+#contact-link:hover::after {
+  width: 100%;
 }
