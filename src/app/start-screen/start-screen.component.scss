@@ -29,12 +29,18 @@
     gap: 50px;
     width: 80%;
 
-    p {
-        width: 40%;
-    }
 
     img {
         transform: rotate(10deg);
+    }
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 40px;
     }
 }
 
@@ -42,12 +48,22 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+
+    p {
+        width: 40%;
+        transition: all 0.2s ease;
+        margin-top: 0;
+    }
+
+    p:hover {
+        width: 60%;
+        background-color: #3355ff;
+    }
 }
 
 .start-text-div {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: end;
     
     a {
@@ -58,14 +74,15 @@
         border: 1px solid white;
         padding: 5px;
         border-radius: 25px;
+        box-shadow: 3px 3px;
         width: 25%;        
         transition: transform 0.2s ease;
     }
 
     a:hover {
-        background-color: white;
-        color: black;
-        transform: scale(1.2);
+        background-color: #f87a55;
+        box-shadow: none;
+        transform: translate(3px, 3px);
     }
 
     h1 {
@@ -82,7 +99,32 @@
     gap: 5px;
     transition: transform 0.2s ease;
 
-    a:hover {
-        transform: scale(1.2);
+    a {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 5px;
     }
+
+    a:hover {
+        background-color: #3355ff;
+    }
+}
+
+.letter {
+  transition: all 0.2s ease;
+}
+
+.letter:hover {
+  color: #f7c518;
+}
+
+.letter.upper:hover {
+  text-transform: lowercase;
+}
+
+.letter:not(.upper):hover {
+  text-transform: uppercase;
 }

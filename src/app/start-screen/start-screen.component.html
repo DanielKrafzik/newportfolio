@@ -2,21 +2,24 @@
     <div class="start-screen-content">
         <div class="start-img-div">
             <div class="start-img-text">
-                <p>Hello world</p>
-                <h1>Frontend</h1>
+                <div class="greeting">
+                    <img src="/img/waving_hand.png" alt="">
+                    <p (mouseenter)="hover = true" (mouseleave)="hover = false">{{ hover ? `I'M DANIEL KRAFZIK` : 'Hello world' }}</p>
+                </div>
+                <h1><span *ngFor="let letter of letters1; let i = index" class="letter" [class.upper]="letter === letter.toUpperCase() && letter !== ' '">{{ letter }}</span></h1>
             </div>
             <img src="../img/profile_pic.png" alt="">
         </div>
 
         <div class="start-text-div">
-            <h1>DEVELOPER</h1>
-            <a href="">Get in Touch</a>
+            <h1><span *ngFor="let letter of letters2; let i = index" class="letter" [class.upper]="letter === letter.toUpperCase() && letter !== ' '">{{ letter }}</span></h1>
+            <a href="#contact">Get in Touch</a>
         </div>
     </div>
 
     <div class="contact-links">
-        <a href=""><img src="../img/linkedin_icon.png" alt="LinkedIn"></a>
-        <a href=""><img src="../img/github_icon.png" alt="GitHub"></a>
-        <a href=""><img src="../img/mail_icon.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/daniel-krafzik-4b7155345/" target="_blank"><img src="../img/linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="https://github.com/DanielKrafzik" target="_blank"><img src="../img/github_icon.png" alt="GitHub"></a>
+        <a href="#contact"><img src="../img/mail_icon.png" alt="Email"></a>
     </div>
 </div>
