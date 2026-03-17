@@ -26,3 +26,10 @@ a, button, input, textarea {
   cursor: none;
 }
 
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
