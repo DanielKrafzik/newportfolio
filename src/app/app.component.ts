@@ -31,7 +31,7 @@ export class AppComponent {
   onMouseOver(event: any) {
     const cursorEl = this.cursor.nativeElement;
 
-    if (event.target.closest('a, button')) {
+    if (event.target.closest('a, button, input, textarea, .interactive')) {
       cursorEl.style.transform = 'translate(-50%, -50%) scale(2)';
       cursorEl.style.backgroundColor = 'rgba(0, 255, 204, 0.6)';
     } else {

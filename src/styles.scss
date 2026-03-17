@@ -19,5 +19,10 @@ html {
 body {
     margin: 0;
     font-family: 'Bricolage Grotesque', sans-serif;
+    cursor: none;
+}
+
+a, button, input, textarea {
+  cursor: none;
 }
 

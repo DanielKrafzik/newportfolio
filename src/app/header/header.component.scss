@@ -40,17 +40,12 @@
   color: #fff;
   padding: 0.25rem 0.5rem;
   margin-left: 0.5rem;
-  cursor: pointer;
   border-radius: 4px;
 }
 
 .lang-switch button.active {
   background-color: #3355ff;
   border-color: #3355ff;
-}
-
-#toggle-lang {
-  cursor: pointer;
 }
 
 .hover-link {
