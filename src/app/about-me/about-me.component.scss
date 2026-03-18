@@ -6,18 +6,31 @@
     align-items: center;
     padding-right: 25px;
 
-    button {
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 25px;
+        box-shadow: 3px 3px;
+        width: 25%;        
+        transition: all 0.2s ease;
         display: flex;
         justify-self: end;
-        background-color: white;
-        padding: 5px 20px;
-        border-radius: 25px;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            background-color: black;
-            color: white;
-            transform: scale(1.2);
-        }
     }
+
+    a:hover {
+        background-color: #f87a55;
+        box-shadow: none;
+        color: white;
+        transform: translate(3px, 3px);
+    }
+}
+
+.about-me-div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
 }
