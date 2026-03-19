@@ -63,13 +63,14 @@
     background: url('/img/bluepaper.png') no-repeat center center;
     width: 560px;
     height: 152px;
-
+    margin-top: -60px;
 }
 
 .pinkpaper-div {
     background: url('/img/pinkpaper.png') no-repeat center center;
     width: 570px;
     height: 191px;
+    margin-top: -50px;
 
     p {
         transform: rotate(6deg);
@@ -78,5 +79,24 @@
     img {
         margin-bottom: 4%;
         transform: rotate(4deg);
+    }
+}
+
+.about-me-content {
+    p {
+        margin-bottom: 0;
+    }
+    h1 {
+        font-size: 48px;
+        margin-bottom: 0;
+        margin-top: 16px;
+    }
+
+    img {
+        margin-bottom: 24px;
+    }
+
+    a {
+        margin-top: 48px;
     }
 }
