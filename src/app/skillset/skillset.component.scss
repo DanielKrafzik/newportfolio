@@ -26,11 +26,13 @@
 .skillset-title {
     color: white;
     width: 20%;
+        margin-right: 3%;
 
     h1 {
         background: url('/img/red_circle.png');
         background-size: cover;
         background-position: center;
+        font-size: 36px;
         padding: 20px 60px;
         width: 150px;
     }
@@ -51,7 +53,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
-    max-width: 800px;
+    width: 60%;
 }
 
 .skillset-icon {
@@ -76,4 +78,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 60%;
 }
+
+.empty-space {
+    width: 20%;
+}
+
+.pull-img {
+        width: 20%;
+        height: auto;
+        transform: rotate(7deg);
+    }
