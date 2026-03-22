@@ -18,14 +18,14 @@
 
             </div>
             <div class="skillset-icons">
-                <div class="skillset-icon" *ngFor="let skill of skills">
-                    <img [src]="skill.icon" [alt]="skill.name">
+                <div class="skillset-icon" *ngFor="let skill of skills; let i = index">
+                    <img class="icon" (mouseenter)="hoverIndex = i" (mouseleave)="hoverIndex = null" [src]="hoverIndex === i ? skill.icon : skill.icon2" [alt]="skill.name">
                     <p>{{ skill.name }}</p>
                 </div>
             </div>
             
             <div  class="pull-img">
-                <img src="/img/peel1.png" class="interactive" alt="">
+                <img (click)="onPeelClick()" [src]="currentPeel" class="interactive" alt="">
             </div>
         </div>
     </div>

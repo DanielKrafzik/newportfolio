@@ -89,4 +89,12 @@
         width: 20%;
         height: auto;
         transform: rotate(7deg);
-    }
+}
+
+.icon {
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(0.8);
+}
