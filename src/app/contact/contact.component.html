@@ -1,35 +1,37 @@
 <div class="contact-div" id="contact">
-    <div class="contact-content">
-        <div class="contact-info">
-            <h2>CONTACT ME</h2>
-            <h1>Ready to work together?</h1>
-            <p>
-                Encourage...
-                <br>
-                Show...
-            </p>
-            <img src="/img/yellow_arrow.png" alt="">
-        </div>
+    <div class="footer-wrapper">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>CONTACT ME</h2>
+                <h1>Ready to work together?</h1>
+                <p>
+                    Encourage...
+                    <br>
+                    Show...
+                </p>
+                <img src="/img/yellow_arrow.png" alt="">
+            </div>
 
-        <div class="contact-form">
-            <div class="form-group">
-                <h2 >What's your name?</h2>
-                <input type="text" placeholder="Your name goes here" required>
+            <div class="contact-form">
+                <div class="form-group">
+                    <h2 >What's your name?</h2>
+                    <input type="text" placeholder="Your name goes here" required>
+                </div>
+                <div class="form-group">
+                    <h2>What's your email?</h2>
+                    <input type="email" placeholder="youremail@email.com" required>
+                </div>
+                <div class="form-group">
+                    <h2>How can I help you?</h2>
+                    <textarea placeholder="Hello Daniel, I am interested in..." minlength="10" maxlength="500" required></textarea>
+                </div>
+                <div class="contact-form-checkbox">
+                    <img src="/img/checkmark_empty.png" alt="" (click)="checkBox()" [src]="isHover ? boxPathHover : boxPath" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
+                    <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
+                </div>
+                <button>Send</button>
             </div>
-            <div class="form-group">
-                <h2>What's your email?</h2>
-                <input type="email" placeholder="youremail@email.com" required>
-            </div>
-            <div class="form-group">
-                <h2>How can I help you?</h2>
-                <textarea placeholder="Hello Daniel, I am interested in..." minlength="10" maxlength="500" required></textarea>
-            </div>
-            <div class="contact-form-checkbox">
-                <img src="/img/checkmark_empty.png" alt="" [src]="isHover ? '/img/checkmark_empty_hover.png' : '/img/checkmark_empty.png'" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
-                <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
-            </div>
-            <button>Send</button>
         </div>
+        <app-footer></app-footer>
     </div>
-    <app-footer></app-footer>
 </div>

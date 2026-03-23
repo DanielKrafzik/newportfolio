@@ -10,14 +10,22 @@
     flex-direction: column;
 }
 
+.footer-wrapper {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contact-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    width: 80%;
-    max-width: 1000px;
+    width: 100%;
     margin-top: 20vh;
 }
 
@@ -122,5 +130,4 @@
 
 app-footer {
     width: 100%;
-    max-width: 1000px;
 }
