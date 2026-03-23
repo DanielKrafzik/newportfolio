@@ -11,10 +11,12 @@
     justify-content: start;
     align-items: center;
     width: 80%;
+    max-width: 1000px;
     gap: 5%;
 
     img {
         width: 100%;
+        max-height: 250px;
         object-fit: cover;
         border-radius: 10px;
     }
@@ -25,12 +27,13 @@
     justify-content: space-around;
     align-items: center;
     width: 80%;
+    max-width: 1000px;
     flex-direction: row;
     gap: 5%;
 
     img {
         width: 100%;
-        max-height: 300px;
+        max-height: 250px;
         object-fit: cover;
         border-radius: 10px;
     }

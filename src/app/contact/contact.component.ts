@@ -8,5 +8,5 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  isHover: boolean = false;
 }

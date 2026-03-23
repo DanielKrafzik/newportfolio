@@ -17,6 +17,7 @@
     justify-content: space-between;
     gap: 40px;
     width: 80%;
+    max-width: 1000px;
     margin-top: 20vh;
 }
 
@@ -88,8 +89,38 @@
     p {
         font-size: 14px;
     }
+
+    a {
+        text-decoration: none;
+        color: #3355ff;
+    }
+}
+
+.form-group {
+    transition: all 0.2s ease;
+}
+
+.form-group:hover {
+    h2 {
+        color: #f87a55;
+    }
+
+    input, textarea {
+        border-bottom: 2px solid #3355ff;
+    }
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        display: none;
+    }
 }
 
 app-footer {
     width: 100%;
+    max-width: 1000px;
 }
