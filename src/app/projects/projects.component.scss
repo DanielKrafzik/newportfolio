@@ -1,6 +1,6 @@
 .projects-div {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 100vh;
     flex-direction: column;
@@ -8,18 +8,13 @@
 
 .projects-upside {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     width: 80%;
-    margin-bottom: 50px;
-
-    div {
-        width: 50%;
-    }
+    gap: 5%;
 
     img {
-        width: 400px;
-        height: 300px;
+        width: 100%;
         object-fit: cover;
         border-radius: 10px;
     }
@@ -31,20 +26,19 @@
     align-items: center;
     width: 80%;
     flex-direction: row;
-
-        div {
-            width: 50%;
-        }
+    gap: 5%;
 
     img {
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        max-height: 300px;
         object-fit: cover;
         border-radius: 10px;
     }
 }
 
 .projects-description {
+    width: 50%;
+
     img {
         width: 30%;
         height: auto;
@@ -52,6 +46,100 @@
     }
 
     h1 {
+        font-size: 60px;
         margin-bottom: 0;
     }
+}
+
+.float {
+    animation: floatY 2s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-container {
+    width: 100%;
+    position: relative; 
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+        display: block;
+        transition: all 0.2s ease;
+    }
+}
+
+.float-container:hover {
+
+    img {     
+        animation-play-state: paused;   
+        background-color: rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+    }
+
+    .overlay-btn {
+        opacity: 1;
+    }
+}
+
+.overlay-btn {
+  position: absolute;
+
+  bottom: 10%;
+  right: 5%;
+
+  opacity: 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 3px 3px;
+  width: 40%;        
+  transition: all 0.2s ease;
+
+  &:hover {    
+    background-color: #f87a55;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+}
+
+.float-container-downside {    
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative; 
+    img {
+        transition: transform 0.2s ease;
+        border-radius: 10px;
+        display: block;
+    }
+}
+
+.float-container-downside:hover {
+    img {
+        transform: scale(1.1);
+    }
+
+    .overlay-btn {
+        opacity: 1;
+    }
+}
+
+.projects-join,
+.projects-sharkie,
+.projects-pokedex {
+    width: 50%;
 }

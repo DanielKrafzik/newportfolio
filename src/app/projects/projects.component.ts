@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [NgFor],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
-
+export class ProjectsComponent {  
 }
