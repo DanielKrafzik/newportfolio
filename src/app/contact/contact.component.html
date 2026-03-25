@@ -5,31 +5,37 @@
                 <h2>CONTACT ME</h2>
                 <h1>Ready to work together?</h1>
                 <p>
-                    Encourage...
+                    I’m always excited to connect with new people and explore opportunities where I can contribute my skills as a Frontend Developer. If you’re looking for someone who is passionate about creating clean, user-friendly interfaces and continuously improving their craft, I’d love to hear from you.
                     <br>
-                    Show...
+                    <br>
+                    I’m particularly interested in joining a team where I can grow, take on new challenges, and actively contribute to meaningful projects. With a strong foundation in modern web technologies and a constant drive to learn, I’m confident that I can add value while evolving alongside your team.
+                    <br>
+                    <br>
+                    Feel free to reach out — I’m always open to discussing new ideas, collaborations, or opportunities.
                 </p>
                 <img src="/img/yellow_arrow.png" alt="">
             </div>
 
             <div class="contact-form">
-                <div class="form-group">
-                    <h2 >What's your name?</h2>
-                    <input type="text" placeholder="Your name goes here" required>
-                </div>
-                <div class="form-group">
-                    <h2>What's your email?</h2>
-                    <input type="email" placeholder="youremail@email.com" required>
-                </div>
-                <div class="form-group">
-                    <h2>How can I help you?</h2>
-                    <textarea placeholder="Hello Daniel, I am interested in..." minlength="10" maxlength="500" required></textarea>
-                </div>
-                <div class="contact-form-checkbox">
-                    <img src="/img/checkmark_empty.png" alt="" (click)="checkBox()" [src]="isHover ? boxPathHover : boxPath" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
-                    <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
-                </div>
-                <button>Send</button>
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <div class="form-group">
+                        <label for="name" >What's your name?</label>
+                        <input [(ngModel)]="contactData.name" name="name" placeholder="Your name goes here" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">What's your email?</label>
+                        <input [(ngModel)]="contactData.email" type="email" name="email" placeholder="youremail@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">How can I help you?</label>
+                        <textarea [(ngModel)]="contactData.message" name="message" placeholder="Hello Daniel, I am interested in..." minlength="10" maxlength="500" required></textarea>
+                    </div>
+                    <div class="contact-form-checkbox">
+                        <img src="/img/checkmark_empty.png" alt="" (click)="checkBox()" [src]="isHover ? boxPathHover : boxPath" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
+                        <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
         <app-footer></app-footer>
