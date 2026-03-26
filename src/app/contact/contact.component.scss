@@ -42,6 +42,8 @@
 }
 
 .contact-form {
+    margin-top: 10%;
+
     input {
         padding: 10px 0px;
         width: 100%;
@@ -50,11 +52,12 @@
         border-bottom: 2px solid #a5861a;
         color: white;
         font-size: 20px;
+        margin-bottom: 20px;
     }
 
     input::placeholder {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     textarea {
@@ -70,20 +73,21 @@
 
     textarea::placeholder {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
     }
+}
 
-    button {
-        display: flex;
-        justify-self: end;
-        padding: 10px 50px;
-        background-color: transparent;
-        font-size: 20px;
-        color: #7e7e7e;
-        border: 2px solid #7e7e7e;
-        border-radius: 25px;
-        box-shadow: 3px 3px 0px #7e7e7e;
-    }
+#submit-btn {
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 20px;
+    color: #7e7e7e;
+    border: 2px solid #7e7e7e;
+    border-radius: 25px;
+    box-shadow: 3px 3px 0px #7e7e7e;
+    width: 30%;
 }
 
 .contact-form-checkbox {
@@ -112,11 +116,13 @@
 
 .form-group {
     transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .form-group:hover {
