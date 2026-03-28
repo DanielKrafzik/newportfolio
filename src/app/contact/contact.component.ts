@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -32,8 +32,8 @@ export class ContactComponent {
     message: ''
   };
 
-  onSubmit(form: any) {
-    if(this.boxChecked) {
+  onSubmit(ngForm: NgForm) {
+    if(ngForm.valid && ngForm.submitted && this.boxChecked) {
       console.log(this.contactData);
       // Here you can add your form submission logic, e.g., sending the data to a server
     } else {
