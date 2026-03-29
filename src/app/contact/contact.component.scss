@@ -12,9 +12,9 @@
 
 .footer-wrapper {
     width: 80%;
-    max-width: 1000px;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
@@ -123,6 +123,7 @@
 label {
     font-size: 24px;
     margin-bottom: 10px;
+    cursor: none;
 }
 
 .form-group:hover {
@@ -147,4 +148,14 @@ label {
 
 app-footer {
     width: 100%;
+}
+
+@media(min-width: 1760px) {
+    .footer-wrapper {
+        max-width: 1400px;
+    }
+
+    .contact-content {
+        margin-top: 20vh;
+    }
 }

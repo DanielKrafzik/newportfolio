@@ -158,3 +158,9 @@
   opacity: 1;
   transform: translateX(160px) rotate(360deg);
 }
+
+@media(min-width: 1760px) {
+    .start-screen-content {
+        max-width: 1400px;
+    }
+}
