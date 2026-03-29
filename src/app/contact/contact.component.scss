@@ -163,7 +163,9 @@ app-footer {
     .footer-wrapper {
         max-width: 1400px;
     }
+}
 
+@media(min-width: 2000px) {
     .contact-content {
         margin-top: 20vh;
     }

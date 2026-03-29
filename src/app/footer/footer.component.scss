@@ -21,9 +21,20 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #3355ff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.logo:hover {
+  color: #f7c518;
+  transform: scale(1.2);
+}
+
+h2 {
+  font-size: 20px;
 }
 
 nav {
@@ -33,14 +44,44 @@ nav {
 }
 
 nav a {
-  margin: 0 1rem;
   text-decoration: none;
   color: #fff;
   transition: color 0.2s;
   transition: transform 0.2s ease;
 }
 
-nav a:hover {
-  color: #3355ff;
-  transform: scale(1.2);
+.hover-link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 20px 0;
+}
+
+#legal-notice::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  background: url("/img/contacts_hover.png") no-repeat;
+  width: 0%;
+  height: 75%;
+
+  background-size: cover;
+
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+#legal-notice:hover::after {
+  width: 100%;
+}
+
+#github-link {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+}
+
+#github-link:hover {
+  background-color: #3355ff;
 }
