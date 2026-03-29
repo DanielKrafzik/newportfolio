@@ -88,6 +88,7 @@
     border-radius: 25px;
     box-shadow: 3px 3px 0px #7e7e7e;
     width: 30%;
+    margin-top: 20px;
 }
 
 .contact-form-checkbox {
@@ -146,6 +147,14 @@ label {
     }
 }
 
+#privacy-policy-error {
+    color: #ff3a00;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 20px;
+    display: none;
+}
+
 app-footer {
     width: 100%;
 }
@@ -158,4 +167,9 @@ app-footer {
     .contact-content {
         margin-top: 20vh;
     }
+}
+
+input.ng-touched.ng-invalid::placeholder,
+textarea.ng-touched.ng-invalid::placeholder {
+    color: #ff3a00;
 }

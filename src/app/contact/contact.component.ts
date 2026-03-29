@@ -20,10 +20,12 @@ export class ContactComponent {
       this.boxPath = '/img/checkmark_checked.png';
       this.boxPathHover = '/img/checkmark_checked_hover.png';
       this.boxChecked = true;
+      document.getElementById('privacy-policy-error')!.style.display = 'none';    
     } else {
       this.boxPath = '/img/checkmark_empty.png';
       this.boxPathHover = '/img/checkmark_empty_hover.png';
       this.boxChecked = false;
+      document.getElementById('privacy-policy-error')!.style.display = 'block';
     }
   }
 
