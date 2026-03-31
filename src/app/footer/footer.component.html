@@ -7,9 +7,18 @@
 
         <nav>
             <a id="legal-notice" routerLink="/legal-notice" class="hover-link">Legal Notice</a>
-            <a href="" id="github-link" class="hover-link">GitHub</a>
-            <a href="" id="linkedin-link" class="hover-link">LinkedIn</a>
-            <a href="" id="email-link" class="hover-link">Email</a>
+            <div class="link-div">
+                <img src="/img/github_icon.png" alt="" class="link-icon" [class.show]="hover === 1">
+                <a href="" id="github-link" class="hover-link" (mouseenter)="hover = 1" (mouseleave)="hover = 0">GitHub</a>
+            </div>
+            <div class="link-div">
+                <img src="/img/linkedin_icon.png" alt="" class="link-icon" [class.show]="hover === 2">
+                <a href="" id="linkedin-link" class="hover-link" (mouseenter)="hover = 2" (mouseleave)="hover = 0">LinkedIn</a>
+            </div>
+            <div class="link-div">
+                <img src="/img/mail_icon.png" alt="" class="link-icon" [class.show]="hover === 3">
+                <a href="" id="email-link" class="hover-link" (mouseenter)="hover = 3" (mouseleave)="hover = 0">Email</a>
+            </div>
         </nav>
     </div>
 </footer>
