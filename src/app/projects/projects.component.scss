@@ -2,7 +2,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
 }
 
@@ -15,9 +15,15 @@
 
     img {
         width: 100%;
-        max-height: 250px;
         object-fit: cover;
         border-radius: 10px;
+    }
+}
+
+.projects-join {
+    img {
+        aspect-ratio: 16 / 9;
+        object-position: top;
     }
 }
 
@@ -31,9 +37,15 @@
 
     img {
         width: 100%;
-        max-height: 250px;
+        aspect-ratio: 16 / 9;
         object-fit: cover;
         border-radius: 10px;
+    }
+}
+
+.projects-pokedex {
+    img {
+        object-position: top;
     }
 }
 
