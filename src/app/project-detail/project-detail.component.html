@@ -1,9 +1,29 @@
 <div *ngIf="currentProject" class="project-detail-container">
 
-  <h1>{{ currentProject.title }}</h1>
+  <button><img src="" alt="">Go Back</button>
 
-  <img [src]="currentProject.image">
+  <div class="project-detail-content">
+    <div class="project-detail-description">
+        <h1>{{ currentProject.title }}</h1>
+        <h2>Description</h2>
+        <p>{{ currentProject.description }}</p>
+        <h2>Implementation Details</h2>
+        <p>blabla</p>
+        <p><span>Duration:</span>5 weeks</p>
+        <div></div>
+    </div>
 
-  <p>{{ currentProject.description }}</p>
+    <div class="project-detail-media">
+        <img [src]="currentProject.image">
+        <div>
+            <a href="">GitHub</a>
+            <a href="">Live Test</a>
+        </div>
+
+    </div>
+
+  </div>
+
+  <button>Next Project <img src="" alt=""></button>
 
 </div>

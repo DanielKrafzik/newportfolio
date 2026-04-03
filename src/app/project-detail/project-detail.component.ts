@@ -18,19 +18,19 @@ export class ProjectDetailComponent {
     {
       id: 'join',
       title: 'Join',
-      image: 'assets/img/Join.png',
+      image: '/img/Join.png',
       description: 'Task manager inspired by the kanban System...'
     },
     {
       id: 'sharkie',
       title: 'Sharkie',
-      image: 'assets/img/Sharkie.png',
+      image: '/img/Sharkie.png',
       description: 'A fun shark-themed game...'
     },
     {
       id: 'pokedex',
       title: 'Pokedex',
-      image: 'assets/img/Pokedex.png',
+      image: '/img/Pokedex.png',
       description: 'A comprehensive database...'
     }
   ];
