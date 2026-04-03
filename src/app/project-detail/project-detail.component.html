@@ -1,1 +1,9 @@
-<p>project-detail works!</p>
+<div *ngIf="currentProject" class="project-detail-container">
+
+  <h1>{{ currentProject.title }}</h1>
+
+  <img [src]="currentProject.image">
+
+  <p>{{ currentProject.description }}</p>
+
+</div>

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [],
+  imports: [NgIf],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss'
 })
@@ -12,7 +13,35 @@ export class ProjectDetailComponent {
 
   projectId: string | null = null;
 
+  
+  projects = [
+    {
+      id: 'join',
+      title: 'Join',
+      image: 'assets/img/Join.png',
+      description: 'Task manager inspired by the kanban System...'
+    },
+    {
+      id: 'sharkie',
+      title: 'Sharkie',
+      image: 'assets/img/Sharkie.png',
+      description: 'A fun shark-themed game...'
+    },
+    {
+      id: 'pokedex',
+      title: 'Pokedex',
+      image: 'assets/img/Pokedex.png',
+      description: 'A comprehensive database...'
+    }
+  ];
+
+  currentProject: any;
+
+
   ngOnInit() {
-    this.projectId = this.route.snapshot.paramMap.get('id');
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      this.currentProject = this.projects.find(p => p.id === id);
+    });
   }
 }
