@@ -22,10 +22,61 @@
     justify-content: space-between;
 }
 
+.project-detail-description {
+    width: 40%;
+}
+
 .project-detail-media {
-    width: 50%;
+    width: 60%;
     img {
         width: 100%;
         aspect-ratio: 16 / 9;
+    }
+}
+
+#go-back-btn {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        font-weight: bold;
+    }
+
+    &:hover {
+        p {
+            color: #f87a55;
+        }
+    }
+}
+
+#next-btn {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        font-weight: bold;
+    }
+
+    &:hover {
+        p {
+            color: #f7c518;
+        }
     }
 }

@@ -19,7 +19,10 @@ export class ProjectDetailComponent {
       id: 'join',
       title: 'Join',
       image: '/img/Join.png',
-      description: 'Task manager inspired by the kanban System...'
+      description: 'Task manager inspired by the kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      workflow: '',
+      duration: '5 weeks',
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'firebase']
     },
     {
       id: 'sharkie',
