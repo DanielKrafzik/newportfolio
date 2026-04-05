@@ -37,6 +37,36 @@
     #span-duration {
         font-weight: bold;
     }
+
+    .tech-div {
+        display: flex;
+        justify-content: space-around;
+    }    
+}
+
+.detail-btn-div {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.detail-btn {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 25px;
+        box-shadow: 3px 3px;
+        width: 25%;
+        transition: transform 0.2s ease;
+    }
+
+.detail-btn:hover {
+    background-color: #f87a55;
+    box-shadow: none;
+    transform: translate(3px, 3px);
 }
 
 .project-detail-media {

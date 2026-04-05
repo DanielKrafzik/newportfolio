@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NgIf } from '@angular/common';
+import { NgIf, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [NgIf],
+  imports: [NgIf, NgFor],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss'
 })
@@ -22,7 +22,7 @@ export class ProjectDetailComponent {
       description: 'Task manager inspired by the kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       workflow: 'Working in a team environment, I gained experience in collaborative development, version control, and clear communication. I contributed to implementing core features, ensuring clean code structure, and maintaining a user-friendly design. This project strengthened my ability to work both independently on assigned tasks and collaboratively within a development team.',
       duration: '5 weeks',
-      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'firebase']
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase']
     },
     {
       id: 'sharkie',
