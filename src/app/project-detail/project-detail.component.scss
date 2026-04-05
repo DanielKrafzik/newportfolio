@@ -24,6 +24,19 @@
 
 .project-detail-description {
     width: 40%;
+
+    h1 {
+        font-size: 54px;
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    #span-duration {
+        font-weight: bold;
+    }
 }
 
 .project-detail-media {
