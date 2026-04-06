@@ -1,6 +1,6 @@
 <div *ngIf="currentProject" class="project-detail-container">
 
-  <button id="go-back-btn"><img src="/img/back_arrow.png" alt=""><p>Go Back</p></button>
+  <a id="go-back-btn" href="#projects"><img src="/img/back_arrow.png" alt=""><p>Go Back</p></a>
 
   <div class="project-detail-content">
     <div class="project-detail-description">
@@ -21,7 +21,7 @@
     <div class="project-detail-media">
         <img [src]="currentProject.image">
         <div class="detail-btn-div">
-            <a href="" class="detail-btn">GitHub</a>
+            <a href="{{ currentProject.github }}" class="detail-btn" target="_blank">GitHub</a>
             <a href="" class="detail-btn">Live Test</a>
         </div>
 
@@ -29,6 +29,6 @@
 
   </div>
 
-  <button id="next-btn"><p>Next Project</p> <img src="/img/next_arrow.png" alt=""></button>
+  <a id="next-btn" [routerLink]="['/portfolio', currentProject.next]"><p>Next Project</p> <img src="/img/next_arrow.png" alt=""></a>
 
 </div>
