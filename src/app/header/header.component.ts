@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +11,11 @@ export class HeaderComponent {
   currentLang: 'EN' | 'DE' = 'EN';
   currentLangIcon = '/img/toggle_en.png';
 
-  toggleLanguage() {
-    this.currentLang = this.currentLang === 'EN' ? 'DE' : 'EN';
-    if (this.currentLang === 'EN') {
-      this.currentLangIcon = '/img/toggle_de.png';
-    } else {
-      this.currentLangIcon = '/img/toggle_en.png';
-    }
-  }
+  constructor(private translate: TranslateService) {
+  this.translate.setDefaultLang('en');
+}
+
+switchLang(lang: string) {
+  this.translate.use(lang);
+}
 }
