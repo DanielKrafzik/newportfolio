@@ -2,13 +2,21 @@
   <div class="logo">DK</div>
 
   <nav class="nav-links">
-    <a id="about-link" class="hover-link" href="#about">About me</a>
-    <a id="skills-link" class="hover-link" href="#skills">Skills</a>
-    <a id="projects-link" class="hover-link" href="#projects">Projects</a>
-    <a id="contact-link" class="hover-link" href="#contact">Contact</a>
+    <a id="about-link" class="hover-link" href="#about">
+      {{ 'NAV.ABOUT' | translate }}
+    </a>
+    <a id="skills-link" class="hover-link" href="#skills">
+      {{ 'NAV.SKILLS' | translate }}
+    </a>
+    <a id="projects-link" class="hover-link" href="#projects">
+      {{ 'NAV.PROJECTS' | translate }}
+    </a>
+    <a id="contact-link" class="hover-link" href="#contact">
+      {{ 'NAV.CONTACT' | translate }}
+    </a>
   </nav>
 
   <div class="lang-switch">
-    <img id="toggle-lang" class="interactive" [src]="currentLangIcon" alt="Toggle Language" (click)="switchLang('de')">
+    <img id="toggle-lang" class="interactive" [src]="currentLangIcon" alt="Toggle Language" (click)="switchLang()">
   </div>
 </header>

@@ -1,6 +1,12 @@
 {
+  "NAV": {
+    "ABOUT": "About me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
   "HOME": {
     "TITLE": "Frontend Developer",
-    "CONTACT": "Contact me"
+    "CONTACT": "Get in touch"
   }
 }
