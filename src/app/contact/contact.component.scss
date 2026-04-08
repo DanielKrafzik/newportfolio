@@ -157,7 +157,12 @@ label {
 
 app-footer {
     width: 100%;
+
+    nav a {
+        color: white;
+    }
 }
+
 
 @media(min-width: 1760px) {
     .footer-wrapper {

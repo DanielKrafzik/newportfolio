@@ -45,7 +45,6 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
   transition: color 0.2s;
   transition: transform 0.2s ease;
 }
@@ -53,7 +52,6 @@ nav a {
 .hover-link {
   position: relative;
   text-decoration: none;
-  color: white;
   padding: 20px 0;
 }
 
@@ -118,4 +116,28 @@ nav a {
 .show {
   opacity: 1;
   transform: translateX(70px) rotate(360deg);
+}
+
+footer.light {
+
+  nav a {
+    color: white;
+  }
+}
+
+footer.dark {
+
+  margin-top: 50px;
+
+  nav a {
+    color: black;
+    font-weight: bold;
+  }
+  .link-div img {
+    display: none;
+  }
+
+  .link-div a:hover {
+    color: white;
+  }
 }
