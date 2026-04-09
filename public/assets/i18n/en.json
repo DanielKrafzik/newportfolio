@@ -11,5 +11,18 @@
     "TITLE_UP": "Frontend",
     "TITLE_DOWN": "DEVELOPER",
     "CONTACT": "Get in touch"
+  },
+  "ABOUT": {
+    "SUBTITLE": "WHO'S DANIEL?",
+    "TITLE": "About Me",
+
+    "LOCATION": "Based in Wallenhorst, Lower Saxony",
+    "TRAVEL": "Open to travel",
+    "REMOTE": "Open to work remote",
+
+    "TEXT1": "Hey there, I'm Daniel. I'm a passionate developer who loves creating innovative solutions. My journey in web development started about 3 years ago. My goal is to keep learning and growing into a professional in this field.",
+    "TEXT2": "Let's collaborate and build something remarkable together!",
+
+    "BUTTON": "Let's talk"
   }
 }

@@ -11,5 +11,18 @@
     "TITLE_UP": "Frontend",
     "TITLE_DOWN": "ENTWICKLER",
     "CONTACT": "Kontaktiere mich"
+  },
+  "ABOUT": {
+    "SUBTITLE": "WER IST DANIEL?",
+    "TITLE": "Über mich",
+
+    "LOCATION": "Ansässig in Wallenhorst, Niedersachsen",
+    "TRAVEL": "Reisebereit",
+    "REMOTE": "Offen für Remote-Arbeit",
+
+    "TEXT1": "Hey, ich bin Daniel. Ich bin ein leidenschaftlicher Entwickler, der gerne innovative Lösungen erstellt. Mein Weg in die Webentwicklung begann vor etwa 3 Jahren. Mein Ziel ist es, mich stetig weiterzuentwickeln und in diesem Bereich professionell zu wachsen.",
+    "TEXT2": "Lass uns zusammenarbeiten und etwas Großartiges erschaffen!",
+
+    "BUTTON": "Kontakt aufnehmen"
   }
 }
