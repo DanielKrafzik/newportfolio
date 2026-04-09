@@ -30,6 +30,28 @@
     "TITLE": "Fähigkeiten",
     "DESCRIPTION": "Hier findest du eine Übersicht über die Technologien und Tools, mit denen ich Erfahrung habe. Ich bin stets motiviert, neue Fähigkeiten zu erlernen und mein Wissen im Bereich der Webentwicklung zu erweitern."
   },
+  "PROJECTS": {
+    "SUBTITLE": "MEINE ARBEIT",
+    "TITLE": "Projekte",
+    "DESCRIPTION": "Hier sind einige meiner aktuellen Projekte. Ich habe die Technologien verwendet, die oberhalb dieser Sektion aufgeführt sind. Dazu gehört auch das Join-Projekt, das ich gemeinsam mit anderen Teilnehmern der Developer Akademie entwickelt habe.",
+
+    "DETAILS": "Projekt ansehen",
+
+    "JOIN": {
+      "TITLE": "Join",
+      "TEXT": "Task-Manager basierend auf dem Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Nutzer und Kategorien zu."
+    },
+
+    "SHARKIE": {
+      "TITLE": "Sharkie",
+      "TEXT": "Ein unterhaltsames Spiel, bei dem man durch die Unterwasserwelt navigiert, Schätze sammelt und den Endgegner besiegt."
+    },
+
+    "POKEDEX": {
+      "TITLE": "Pokédex",
+      "TEXT": "Eine umfassende Datenbank aller Pokémon mit detaillierten Informationen, Werten und Entwicklungsstufen."
+    }
+  },
   "FOOTER": {
     "LEGAL": "Rechtliche Hinweise"
   }

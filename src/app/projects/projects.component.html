@@ -1,38 +1,51 @@
 <div class="projects-div" id="projects">
-    <div class="projects-upside">
-        <div class="projects-description">
-            <h2>MY CRAFT</h2>
-            <h1>Projects</h1>
-            <img src="/img/yellow_line.png" alt="Yellow Line">
-            <p>Here are some of my recent projects. I used the technologies that are listed above this section. It also includes the join project, which i constructed with 2 other developer akademie participants.</p>
-        </div>
-        <div class="projects-join">
-            <div class="float-container">
-                <img src="/img/Join.png" alt="Join" class="float">
-                <a [routerLink]="['/portfolio', 'join']" class="overlay-btn">Project details</a>
-            </div>
-            <h2>Join</h2>
-            <p>Task manager inspired by the kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </p>
-        </div>
+  
+  <div class="projects-upside">
+    
+    <div class="projects-description">
+      <h2>{{ 'PROJECTS.SUBTITLE' | translate }}</h2>
+      <h1>{{ 'PROJECTS.TITLE' | translate }}</h1>
+      <img src="/img/yellow_line.png" alt="Yellow Line">
+      <p>{{ 'PROJECTS.DESCRIPTION' | translate }}</p>
     </div>
 
-    <div class="projects-downside">
-        <div class="projects-sharkie">
-            <div class="float-container-downside">
-                <img src="/img/Sharkie.png" alt="Sharkie">
-                <a [routerLink]="['/portfolio', 'sharkie']" class="overlay-btn">Project details</a>
-            </div>
-            <h2>Sharkie</h2>
-            <p>A fun shark-themed game where players navigate through the ocean to collect treasures and defeat the endboss.</p>
-        </div>
-        <div class="projects-pokedex">
-            <div class="float-container-downside">
-                <img src="/img/Pokedex.png" alt="Pokedex">
-                <a [routerLink]="['/portfolio', 'pokedex']" class="overlay-btn">Project details</a>
-            </div>
-            <h2>Pokedex</h2>
-            <p>A comprehensive database of all Pokémon species, featuring detailed information, stats, and evolutionary chains.</p>
-        </div>
+    <div class="projects-join">
+      <div class="float-container">
+        <img src="/img/Join.png" alt="Join" class="float">
+        <a [routerLink]="['/portfolio', 'join']" class="overlay-btn">
+          {{ 'PROJECTS.DETAILS' | translate }}
+        </a>
+      </div>
+      <h2>{{ 'PROJECTS.JOIN.TITLE' | translate }}</h2>
+      <p>{{ 'PROJECTS.JOIN.TEXT' | translate }}</p>
     </div>
+
+  </div>
+
+  <div class="projects-downside">
+    
+    <div class="projects-sharkie">
+      <div class="float-container-downside">
+        <img src="/img/Sharkie.png" alt="Sharkie">
+        <a [routerLink]="['/portfolio', 'sharkie']" class="overlay-btn">
+          {{ 'PROJECTS.DETAILS' | translate }}
+        </a>
+      </div>
+      <h2>{{ 'PROJECTS.SHARKIE.TITLE' | translate }}</h2>
+      <p>{{ 'PROJECTS.SHARKIE.TEXT' | translate }}</p>
+    </div>
+
+    <div class="projects-pokedex">
+      <div class="float-container-downside">
+        <img src="/img/Pokedex.png" alt="Pokedex">
+        <a [routerLink]="['/portfolio', 'pokedex']" class="overlay-btn">
+          {{ 'PROJECTS.DETAILS' | translate }}
+        </a>
+      </div>
+      <h2>{{ 'PROJECTS.POKEDEX.TITLE' | translate }}</h2>
+      <p>{{ 'PROJECTS.POKEDEX.TEXT' | translate }}</p>
+    </div>
+
+  </div>
 
 </div>

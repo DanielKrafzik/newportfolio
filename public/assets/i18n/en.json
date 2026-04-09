@@ -30,6 +30,28 @@
     "TITLE": "Skill Set",
     "DESCRIPTION": "Here you can find an overview of the technologies and tools I have experience with. I am always eager to learn new skills and expand my knowledge in the field of web development."
   },
+  "PROJECTS": {
+    "SUBTITLE": "MY CRAFT",
+    "TITLE": "Projects",
+    "DESCRIPTION": "Here are some of my recent projects. I used the technologies listed above this section. It also includes the Join project, which I built together with other Developer Akademie participants.",
+
+    "DETAILS": "Project details",
+
+    "JOIN": {
+      "TITLE": "Join",
+      "TEXT": "Task manager inspired by the Kanban system. Create and organize tasks using drag and drop functionality, assign users and categories."
+    },
+
+    "SHARKIE": {
+      "TITLE": "Sharkie",
+      "TEXT": "A fun shark-themed game where players navigate through the ocean to collect treasures and defeat the endboss."
+    },
+
+    "POKEDEX": {
+      "TITLE": "Pokedex",
+      "TEXT": "A comprehensive database of all Pokémon species, featuring detailed information, stats, and evolutionary chains."
+    }
+  },
   "FOOTER": {
     "LEGAL": "Legal Notice"
   }
