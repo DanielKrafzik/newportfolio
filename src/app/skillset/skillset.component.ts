@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skillset',
-  imports: [NgFor],
+  imports: [NgFor, TranslateModule],
   templateUrl: './skillset.component.html',
   styleUrl: './skillset.component.scss'
 })

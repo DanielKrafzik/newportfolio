@@ -24,5 +24,10 @@
     "TEXT2": "Let's collaborate and build something remarkable together!",
 
     "BUTTON": "Let's talk"
+  },
+  "SKILLS": {
+    "SUBTITLE": "My Stack",
+    "TITLE": "Skill Set",
+    "DESCRIPTION": "Here you can find an overview of the technologies and tools I have experience with. I am always eager to learn new skills and expand my knowledge in the field of web development."
   }
 }
