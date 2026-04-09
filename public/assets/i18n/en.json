@@ -6,7 +6,10 @@
     "CONTACT": "Contact"
   },
   "HOME": {
-    "TITLE": "Frontend Developer",
+    "HELLO": "Hello world",
+    "NAME": "I'm Daniel Krafzik",
+    "TITLE_UP": "Frontend",
+    "TITLE_DOWN": "DEVELOPER",
     "CONTACT": "Get in touch"
   }
 }

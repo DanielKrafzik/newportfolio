@@ -4,7 +4,7 @@
             <div class="start-img-text">
                 <div class="greeting">
                     <img src="/img/waving_hand.png" class="hand" [class.show]="hover" alt="">
-                    <p (mouseenter)="hover = true" (mouseleave)="hover = false">{{ hover ? `I'M DANIEL KRAFZIK` : 'Hello world' }}</p>
+                    <p (mouseenter)="hover = true" (mouseleave)="hover = false">{{ hover ? nameText : helloText }}</p>
                 </div>
                 <h1><span *ngFor="let letter of letters1; let i = index" class="letter" [class.upper]="letter === letter.toUpperCase() && letter !== ' '">{{ letter }}</span></h1>
             </div>

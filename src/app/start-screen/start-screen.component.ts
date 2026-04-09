@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
@@ -8,18 +8,41 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   templateUrl: './start-screen.component.html',
   styleUrl: './start-screen.component.scss'
 })
-export class StartScreenComponent {
-titleUp = 'Frontend';
-titleDown = 'DEVELOPER';
-letters1 = this.titleUp.split('');
-letters2 = this.titleDown.split('');
-hover = false;
+export class StartScreenComponent implements OnInit {
+  
+  hover = false;
 
-constructor(private translate: TranslateService) {
-  this.translate.setDefaultLang('en');
-}
+  helloText = '';
+  nameText = '';
 
-switchLang(lang: string) {
-  this.translate.use(lang);
-}
+  titleUp = '';
+  titleDown = '';
+
+  letters1: string[] = [];
+  letters2: string[] = [];
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    this.loadTranslations();
+
+    // 🔥 wichtig bei Sprachwechsel
+    this.translate.onLangChange.subscribe(() => {
+      this.loadTranslations();
+    });
+  }
+
+  loadTranslations() {
+    this.translate.get('HOME').subscribe(res => {
+      this.helloText = res.HELLO;
+      this.nameText = res.NAME;
+
+      this.titleUp = res.TITLE_UP;
+      this.titleDown = res.TITLE_DOWN;
+
+      this.letters1 = this.titleUp.split('');
+      this.letters2 = this.titleDown.split('');
+    });
+  }
+
 }
