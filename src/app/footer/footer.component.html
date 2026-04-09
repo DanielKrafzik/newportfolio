@@ -6,7 +6,7 @@
         </div>
 
         <nav>
-            <a id="legal-notice" routerLink="/legal-notice" class="hover-link">Legal Notice</a>
+            <a id="legal-notice" routerLink="/legal-notice" class="hover-link">{{ 'FOOTER.LEGAL' | translate }}</a>
             <div class="link-div">
                 <img src="/img/github_icon.png" alt="" class="link-icon" [class.show]="hover === 1">
                 <a href="" id="github-link" class="hover-link" (mouseenter)="hover = 1" (mouseleave)="hover = 0">GitHub</a>

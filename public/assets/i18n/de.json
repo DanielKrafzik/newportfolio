@@ -29,5 +29,8 @@
     "SUBTITLE": "Mein Stack",
     "TITLE": "Fähigkeiten",
     "DESCRIPTION": "Hier findest du eine Übersicht über die Technologien und Tools, mit denen ich Erfahrung habe. Ich bin stets motiviert, neue Fähigkeiten zu erlernen und mein Wissen im Bereich der Webentwicklung zu erweitern."
+  },
+  "FOOTER": {
+    "LEGAL": "Rechtliche Hinweise"
   }
 }
