@@ -103,5 +103,32 @@
     "DISCLAIMER_TEXT": "This portfolio is provided without warranty of any kind. We are not liable for any damages arising from its use.",
 
     "INDEMNITY_TEXT": "You agree to indemnify and hold harmless the creators of this portfolio against any claims."
+  },
+  "PROJECT_DETAIL": {
+    "DESCRIPTION": "Description",
+    "IMPLEMENTATION": "Implementation Details",
+    "DURATION": "Duration:",
+    "BACK": "Go Back",
+    "NEXT": "Next Project",
+    "LIVE": "Live Test",
+    "GITHUB": "GitHub",
+
+    "JOIN": {
+      "DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag and drop functionality.",
+      "WORKFLOW": "Working in a team environment, I gained experience in collaborative development, version control, and communication.",
+      "DURATION": "5 weeks"
+    },
+
+    "SHARKIE": {
+      "DESCRIPTION": "A fun shark-themed game where players collect treasures and defeat the endboss.",
+      "WORKFLOW": "Focused on game logic, animations, and user input handling.",
+      "DURATION": "3 weeks"
+    },
+
+    "POKEDEX": {
+      "DESCRIPTION": "A comprehensive Pokémon database with detailed stats and evolutions.",
+      "WORKFLOW": "Focused on API integration, reusable components, and UX.",
+      "DURATION": "2 weeks"
+    }
   }
 }

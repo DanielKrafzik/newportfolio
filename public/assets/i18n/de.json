@@ -103,5 +103,32 @@
     "DISCLAIMER_TEXT": "Dieses Portfolio wird ohne jegliche Garantie bereitgestellt. Es wird keine Haftung übernommen.",
 
     "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, die Ersteller dieses Portfolios von Ansprüchen freizustellen."
+  },
+  "PROJECT_DETAIL": {
+    "DESCRIPTION": "Beschreibung",
+    "IMPLEMENTATION": "Umsetzung",
+    "DURATION": "Dauer:",
+    "BACK": "Zurück",
+    "NEXT": "Nächstes Projekt",
+    "LIVE": "Live testen",
+    "GITHUB": "GitHub",
+
+    "JOIN": {
+      "DESCRIPTION": "Task-Manager basierend auf dem Kanban-System.",
+      "WORKFLOW": "Arbeit im Team mit Fokus auf Zusammenarbeit und sauberen Code.",
+      "DURATION": "5 Wochen"
+    },
+
+    "SHARKIE": {
+      "DESCRIPTION": "Ein Spiel, bei dem man Schätze sammelt und Gegner besiegt.",
+      "WORKFLOW": "Fokus auf Spiellogik und Animationen.",
+      "DURATION": "3 Wochen"
+    },
+
+    "POKEDEX": {
+      "DESCRIPTION": "Eine Pokémon-Datenbank mit allen wichtigen Infos.",
+      "WORKFLOW": "Fokus auf API, Struktur und User Experience.",
+      "DURATION": "2 Wochen"
+    }
   }
 }
