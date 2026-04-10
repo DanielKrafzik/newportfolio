@@ -1,15 +1,16 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
-  imports: [FooterComponent, FormsModule],
+  imports: [FooterComponent, FormsModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   isHover: boolean = false;
   boxPath: string = '/img/checkmark_empty.png';
   boxPathHover: string = '/img/checkmark_empty_hover.png';
@@ -67,5 +68,37 @@ export class ContactComponent {
 
       ngForm.resetForm();
     }
+  }
+
+  placeholders = {
+    name: '',
+    nameError: '',
+    email: '',
+    emailError: '',
+    message: '',
+    messageError: ''
+  };
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    this.loadTranslations();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.loadTranslations();
+    });
+  }
+
+  loadTranslations() {
+    this.translate.get('CONTACT').subscribe(res => {
+      this.placeholders.name = res.NAME_PLACEHOLDER;
+      this.placeholders.nameError = res.NAME_ERROR;
+
+      this.placeholders.email = res.EMAIL_PLACEHOLDER;
+      this.placeholders.emailError = res.EMAIL_ERROR;
+
+      this.placeholders.message = res.MESSAGE_PLACEHOLDER;
+      this.placeholders.messageError = res.MESSAGE_ERROR;
+    });
   }
 }

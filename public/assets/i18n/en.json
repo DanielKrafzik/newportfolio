@@ -52,6 +52,32 @@
       "TEXT": "A comprehensive database of all Pokémon species, featuring detailed information, stats, and evolutionary chains."
     }
   },
+  "CONTACT": {
+    "SUBTITLE": "CONTACT ME",
+    "TITLE": "Ready to work together?",
+
+    "TEXT": "I’m always excited to connect with new people and explore opportunities where I can contribute my skills as a Frontend Developer. If you’re looking for someone who is passionate about creating clean, user-friendly interfaces and continuously improving their craft, I’d love to hear from you.\n\nI’m particularly interested in joining a team where I can grow, take on new challenges, and actively contribute to meaningful projects. With a strong foundation in modern web technologies and a constant drive to learn, I’m confident that I can add value while evolving alongside your team.\n\nFeel free to reach out — I’m always open to discussing new ideas, collaborations, or opportunities.",
+
+    "NAME_LABEL": "What's your name?",
+    "EMAIL_LABEL": "What's your email?",
+    "MESSAGE_LABEL": "How can I help you?",
+
+    "NAME_PLACEHOLDER": "Your name goes here",
+    "NAME_ERROR": "Oops! It seems your name is missing",
+
+    "EMAIL_PLACEHOLDER": "youremail@email.com",
+    "EMAIL_ERROR": "Oops! Your email is required",
+
+    "MESSAGE_PLACEHOLDER": "Hello Daniel, I am interested in...",
+    "MESSAGE_ERROR": "What do you need to develop?",
+
+    "PRIVACY_TEXT": "I've read the",
+    "PRIVACY_LINK": "privacy policy",
+    "PRIVACY_TEXT2": "and agree to the processing of my data as outlined.",
+    "PRIVACY_ERROR": "Please accept the privacy policy to submit your message.",
+
+    "SUBMIT": "Submit"
+  },
   "FOOTER": {
     "LEGAL": "Legal Notice"
   }
