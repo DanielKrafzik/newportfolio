@@ -33,3 +33,13 @@ a, button, input, textarea {
 .active {
   display: block;
 }
+
+@media (max-width: 768px) {
+  body {
+    cursor: default;
+  }
+
+  a, button, input, textarea {
+  cursor: default;
+}
+}

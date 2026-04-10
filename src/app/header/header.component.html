@@ -1,7 +1,7 @@
 <header class="header">
   <div class="logo">DK</div>
 
-  <nav class="nav-links">
+  <nav class="nav-links desktop">
     <a id="about-link" class="hover-link" href="#about">
       {{ 'NAV.ABOUT' | translate }}
     </a>
@@ -16,7 +16,31 @@
     </a>
   </nav>
 
+  <div class="lang-switch desktop">
+    <img id="toggle-lang" class="interactive" [src]="currentLangIcon" alt="Toggle Language" (click)="switchLang()">
+  </div>
+
+  <div class="burger" (click)="toggleMenu()" [class.active]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</header>
+
+<div class="mobile-menu" [class.open]="menuOpen">
+  <a (click)="closeMenu()" href="#about">{{ 'NAV.ABOUT' | translate }}</a>
+  <a (click)="closeMenu()" href="#skills">{{ 'NAV.SKILLS' | translate }}</a>
+  <a (click)="closeMenu()" href="#projects">{{ 'NAV.PROJECTS' | translate }}</a>
+  <a (click)="closeMenu()" href="#contact">{{ 'NAV.CONTACT' | translate }}</a>
+
   <div class="lang-switch">
     <img id="toggle-lang" class="interactive" [src]="currentLangIcon" alt="Toggle Language" (click)="switchLang()">
   </div>
-</header>
+
+  <div class="contact-links">
+        <a href="https://www.linkedin.com/in/daniel-krafzik-4b7155345/" target="_blank"><img src="../img/linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="https://github.com/DanielKrafzik" target="_blank"><img src="../img/github_icon.png" alt="GitHub"></a>
+        <a href="#contact"><img src="../img/mail_icon.png" alt="Email"></a>
+    </div>
+</div>

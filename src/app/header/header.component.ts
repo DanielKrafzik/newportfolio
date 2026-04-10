@@ -24,4 +24,14 @@ export class HeaderComponent {
   toggleLangIcon(lang: 'en' | 'de'): void {
     this.currentLangIcon = lang === 'en' ? '/img/toggle_en.png' : '/img/toggle_de.png';
   }
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
 }

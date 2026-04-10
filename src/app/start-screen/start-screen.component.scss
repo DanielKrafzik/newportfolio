@@ -164,3 +164,9 @@
         max-width: 1400px;
     }
 }
+
+@media (max-width: 768px) {
+    .contact-links {
+        display: none;
+    }
+}

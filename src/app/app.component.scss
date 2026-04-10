@@ -27,3 +27,9 @@ main {
 
   box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
