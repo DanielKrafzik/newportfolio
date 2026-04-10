@@ -80,5 +80,28 @@
   },
   "FOOTER": {
     "LEGAL": "Rechtliche Hinweise"
+  },
+  "LEGAL": {
+    "TITLE": "Impressum",
+    "IMPRINT": "Angaben gemäß § 5 TMG",
+    "CONTACT": "Kontakt",
+    "TERMS": "Nutzungsbedingungen",
+    "SCOPE": "Geltungsbereich und Eigentum",
+    "RIGHTS": "Urheberrechte",
+    "USAGE": "Nutzung des Produkts",
+    "DISCLAIMER": "Haftungsausschluss",
+    "INDEMNITY": "Freistellung",
+
+    "TERMS_TEXT": "Durch den Zugriff auf dieses Portfolio stimmen Sie den folgenden Bedingungen zu. Diese können jederzeit geändert werden.",
+
+    "SCOPE_TEXT": "Dieses Portfolio wurde im Rahmen einer Webentwicklungs-Ausbildung bei der Developer Akademie erstellt und dient ausschließlich zu Lernzwecken.",
+
+    "RIGHTS_TEXT": "Alle Rechte am Design liegen bei der Developer Akademie GmbH. Eine unerlaubte Nutzung ist untersagt.",
+
+    "USAGE_TEXT": "Dieses Portfolio darf nur für rechtmäßige Zwecke verwendet werden.",
+
+    "DISCLAIMER_TEXT": "Dieses Portfolio wird ohne jegliche Garantie bereitgestellt. Es wird keine Haftung übernommen.",
+
+    "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, die Ersteller dieses Portfolios von Ansprüchen freizustellen."
   }
 }

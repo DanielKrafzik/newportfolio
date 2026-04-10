@@ -80,5 +80,28 @@
   },
   "FOOTER": {
     "LEGAL": "Legal Notice"
+  },
+  "LEGAL": {
+    "TITLE": "Legal Notice",
+    "IMPRINT": "Imprint",
+    "CONTACT": "Contact",
+    "TERMS": "Acceptance of Terms",
+    "SCOPE": "Scope and Ownership of the Product",
+    "RIGHTS": "Proprietary Rights",
+    "USAGE": "Use of the Product",
+    "DISCLAIMER": "Disclaimer of Warranties and Limitation of Liability",
+    "INDEMNITY": "Indemnity",
+
+    "TERMS_TEXT": "By accessing and using this portfolio, you agree to the following terms and conditions. These may be updated at any time without notice.",
+
+    "SCOPE_TEXT": "This portfolio was developed as part of a web development training program at Developer Akademie and is intended for educational purposes only.",
+
+    "RIGHTS_TEXT": "All rights to the design belong to Developer Akademie GmbH. Unauthorized use is prohibited.",
+
+    "USAGE_TEXT": "This portfolio may only be used for lawful purposes. Any misuse is strictly prohibited.",
+
+    "DISCLAIMER_TEXT": "This portfolio is provided without warranty of any kind. We are not liable for any damages arising from its use.",
+
+    "INDEMNITY_TEXT": "You agree to indemnify and hold harmless the creators of this portfolio against any claims."
   }
 }
