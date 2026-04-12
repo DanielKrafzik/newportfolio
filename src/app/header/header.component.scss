@@ -202,15 +202,16 @@
   }
 
   .burger {
+    margin-right: 10px;
     display: flex;
   }
 
   .header {
     justify-content: space-between;
-    padding: 0 20px;
   }
 
   .logo {
+    margin-left: 10px;
     z-index: 1001;
   }
 

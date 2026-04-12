@@ -180,3 +180,9 @@ input.ng-touched.ng-invalid::placeholder,
 textarea.ng-touched.ng-invalid::placeholder {
     color: #ff3a00;
 }
+
+@media (max-width: 768px) {
+    .contact-div {
+        height: auto;
+    }
+}

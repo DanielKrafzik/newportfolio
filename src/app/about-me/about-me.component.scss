@@ -106,3 +106,17 @@
         max-width: 1400px;
     }
 }
+
+@media(max-width: 768px) {
+    .about-me-div {
+        flex-direction: column;;
+    }
+
+    .about-me-content {
+        order: 1;
+    }
+
+    .about-me-images {
+        order: 2;
+    }
+}

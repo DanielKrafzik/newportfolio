@@ -98,3 +98,31 @@
 .icon:hover {
     transform: scale(0.8);
 }
+
+@media (max-width: 768px) {
+    .skillset-upside {
+        flex-direction: column;;
+    }
+
+    .empty-space {
+        display: none;
+    }
+
+    .skillset-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skillset-container {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 100px;
+    }
+
+    .skillset-downside {
+        flex-direction: column;
+
+        img {
+            margin-top: -150px;
+        }
+    }
+}
