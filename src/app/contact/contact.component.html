@@ -7,7 +7,7 @@
                 <p>
                     {{ 'CONTACT.TEXT' | translate }}
                 </p>
-                <img src="/img/yellow_arrow.png" alt="">
+                <img class="desktop" src="/img/yellow_arrow.png" alt="">
             </div>
 
             <div class="contact-form">
@@ -43,7 +43,10 @@
                         </p>
                     </div>
                     <p id="privacy-policy-error" class="error-message">{{ 'CONTACT.PRIVACY_ERROR' | translate }}</p>
-                    <input id="submit-btn" type="submit" value="{{ 'CONTACT.SUBMIT' | translate }}">
+                    <div class="submit-btn-div">
+                        <img class="mobile" src="/img/yellow_arrow.png" alt="">
+                        <input id="submit-btn" type="submit" value="{{ 'CONTACT.SUBMIT' | translate }}">
+                    </div>
                 </form>
             </div>
         </div>

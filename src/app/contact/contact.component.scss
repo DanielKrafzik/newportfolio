@@ -155,6 +155,14 @@ label {
     display: none;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
 app-footer {
     width: 100%;
 
@@ -185,6 +193,38 @@ textarea.ng-touched.ng-invalid::placeholder {
     .contact-div {
         height: auto;
         min-height: 100vh;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+        max-width: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .submit-btn-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 60%;
+            height: auto;
+        }
+
+        input {
+            width: 40%;
+        }
     }
 }
 

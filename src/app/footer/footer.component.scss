@@ -157,6 +157,16 @@ footer.dark {
     display: none;
   }
 
+  #legal-notice-mobile {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin-bottom: 24px;
+    display: flex;
+    align-self: end;
+    font-weight: bold;
+  }
+
   .footer-name {
     display: flex;
     justify-content: space-between;
