@@ -57,7 +57,7 @@
     }
 
     p:hover {
-        width: 60%;
+        width: 240px;
         background-color: #3355ff;
     }
 }
@@ -156,7 +156,7 @@
 
 .show {
   opacity: 1;
-  transform: translateX(160px) rotate(360deg);
+  transform: translateX(80px) rotate(360deg);
 }
 
 @media(min-width: 1760px) {
@@ -166,7 +166,59 @@
 }
 
 @media (max-width: 768px) {
+    .start-screen-div {
+        height: auto;
+        min-height: 100vh;
+        align-items: flex-start;
+    }
+
+    .start-screen-content {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    #profile-pic {
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%) rotate(10deg);
+    }
+
+    .greeting {
+        margin-top: 10vh;
+    }
+
+    .start-text-div {
+        a {
+            width: 240px;
+            margin-top: 25px;
+        }
+    }
+
     .contact-links {
         display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .start-screen-content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .start-screen-content {
+        h1 {
+            font-size: 48px;
+        }
+    }
+}
+
+@media (max-width: 1135px) {
+    .start-screen-content {
+        h1 {
+            font-size: 60px;
+        }
     }
 }
