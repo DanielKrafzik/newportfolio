@@ -26,7 +26,7 @@
 .skillset-title {
     color: white;
     width: 20%;
-        margin-right: 3%;
+    margin-right: 3%;
 
     h1 {
         background: url('/img/red_circle.png');
@@ -99,7 +99,30 @@
     transform: scale(0.8);
 }
 
-@media (max-width: 768px) {
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media (max-width: 1385px) {
+    .skillset-title {
+        h1 {
+            font-size: 24px;
+            padding: 8px 12px;
+            width: 120px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
     .skillset-upside {
         flex-direction: column;;
     }
@@ -108,7 +131,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: right;
+        align-items: end;
     }
 
     .empty-space {
@@ -117,6 +140,7 @@
 
     .skillset-icons {
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
     }
 
     .skillset-container {
@@ -131,6 +155,14 @@
         img {
             margin-top: -150px;
         }
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 }
 

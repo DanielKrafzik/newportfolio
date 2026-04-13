@@ -165,17 +165,20 @@
     }
 }
 
+
+@media (max-width: 1135px) {
+    .start-screen-content {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .start-screen-div {
         height: auto;
         min-height: 100vh;
         align-items: flex-start;
-    }
-
-    .start-screen-content {
-        h1 {
-            font-size: 60px;
-        }
     }
 
     #profile-pic {
@@ -211,14 +214,6 @@
     .start-screen-content {
         h1 {
             font-size: 48px;
-        }
-    }
-}
-
-@media (max-width: 1135px) {
-    .start-screen-content {
-        h1 {
-            font-size: 60px;
         }
     }
 }

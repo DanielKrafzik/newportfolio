@@ -18,8 +18,14 @@
 
             </div>
             <div class="skillset-icons">
-                <div class="skillset-icon" *ngFor="let skill of skills; let i = index">
+                <div class="skillset-icon desktop" *ngFor="let skill of skills; let i = index">
                     <img class="icon" (mouseenter)="hoverIndex = i" (mouseleave)="hoverIndex = null" [src]="hoverIndex === i ? skill.icon : skill.icon2" [alt]="skill.name">
+                    
+                    <p>{{ skill.name }}</p>
+                </div>
+                <div class="skillset-icon mobile" *ngFor="let skill of skills; let i = index">
+                    <img class="icon" (mouseenter)="hoverIndex = i" (mouseleave)="hoverIndex = null" [src]="skill.icon" [alt]="skill.name">
+                    
                     <p>{{ skill.name }}</p>
                 </div>
             </div>
