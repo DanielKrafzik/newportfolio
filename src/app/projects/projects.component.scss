@@ -53,7 +53,7 @@
     width: 50%;
 
     img {
-        width: 30%;
+        width: 60%;
         height: auto;
         margin-bottom: 20px;
     }
@@ -160,5 +160,38 @@
 @media(min-width: 1760px) {
     .projects-upside, .projects-downside {
         max-width: 1400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-downside,
+    .projects-upside {
+        flex-direction: column;
+    }
+
+    .projects-description,
+    .projects-join,
+    .projects-sharkie,
+    .projects-pokedex {
+        width: 100%;
+    }
+
+    .overlay-btn {
+        opacity: 1;
+        position: unset;
+        margin: 20px 5px;
+        color: black;
+        border-color: black;
+        padding: 10px 20px;
+        font-size: 16px;
+        display: flex;
+        justify-self: end;
+    }
+}
+
+@media (max-width: 580px) {
+    .projects-downside,
+    .projects-upside {
+        width: 95%;
     }
 }
