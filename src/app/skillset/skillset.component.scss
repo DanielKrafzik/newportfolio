@@ -104,6 +104,13 @@
         flex-direction: column;;
     }
 
+    .skillset-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+    }
+
     .empty-space {
         display: none;
     }
@@ -124,5 +131,15 @@
         img {
             margin-top: -150px;
         }
+    }
+}
+
+@media (max-width: 580px) {
+    .skillset-content {
+        width: 95%;
+    }
+
+    .skillset-icons {
+        width: 100%;
     }
 }
