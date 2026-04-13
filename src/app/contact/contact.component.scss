@@ -1,5 +1,5 @@
 .contact-div {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('/img/contact_background.png');
     background-size: cover;
     background-position: center top;
@@ -184,5 +184,12 @@ textarea.ng-touched.ng-invalid::placeholder {
 @media (max-width: 768px) {
     .contact-div {
         height: auto;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 580px) {
+    .footer-wrapper {
+        width: 95%;
     }
 }

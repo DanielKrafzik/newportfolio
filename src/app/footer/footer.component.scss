@@ -141,3 +141,32 @@ footer.dark {
     color: white;
   }
 }
+
+.mobile {
+    display: none;
+  }
+.desktop {
+    display: block;
+  }
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .footer-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #github-link,
+  #linkedin-link,
+  #email-link {
+    padding: 2px 4px;
+  }
+}
