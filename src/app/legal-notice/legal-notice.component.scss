@@ -45,3 +45,10 @@
 app-footer {
     width: 100%;
 }
+
+@media (max-width: 580px) {
+    .footer-wrapper,
+    .legal-notice-content {
+        width: 95%;
+    }
+}

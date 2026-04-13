@@ -129,6 +129,10 @@ footer.dark {
 
   margin-top: 50px;
 
+  #legal-notice-mobile {
+    color: black;
+  }
+
   nav a {
     color: black;
     font-weight: bold;
@@ -157,6 +161,13 @@ footer.dark {
     display: none;
   }
 
+  .footer-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }    
+
   #legal-notice-mobile {
     text-decoration: none;
     color: white;
@@ -165,13 +176,6 @@ footer.dark {
     display: flex;
     align-self: end;
     font-weight: bold;
-  }
-
-  .footer-name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
   }
 
   #github-link,
