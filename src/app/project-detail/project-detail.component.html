@@ -22,7 +22,7 @@
         <img [src]="currentProject.image">
         <div class="detail-btn-div">
             <a href="{{ currentProject.github }}" class="detail-btn" target="_blank">{{ 'PROJECT_DETAIL.GITHUB' | translate }}</a>
-            <a href="" class="detail-btn">{{ 'PROJECT_DETAIL.LIVE' | translate }}</a>
+            <a [href]="currentProject.live" target="_blank" class="detail-btn">{{ 'PROJECT_DETAIL.LIVE' | translate }}</a>
         </div>
 
     </div>

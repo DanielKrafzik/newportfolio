@@ -28,7 +28,8 @@ export class ProjectDetailComponent {
 
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       next: 'sharkie',
-      github: 'https://github.com/DanielKrafzik/join'
+      github: 'https://github.com/DanielKrafzik/join',
+      live: 'https://join-app-dk.web.app'
     },
     {
       id: 'sharkie',
@@ -41,7 +42,8 @@ export class ProjectDetailComponent {
 
       technologies: ['JavaScript', 'HTML', 'CSS'],
       next: 'pokedex',
-      github: 'https://github.com/DanielKrafzik/El-pollo-Loco'
+      github: 'https://github.com/DanielKrafzik/El-pollo-Loco',
+      live: 'https://sharkie-dk.web.app'
     },
     {
       id: 'pokedex',
@@ -54,7 +56,8 @@ export class ProjectDetailComponent {
 
       technologies: ['JavaScript', 'HTML', 'CSS'],
       next: 'join',
-      github: 'https://github.com/DanielKrafzik/PokedexV2'
+      github: 'https://github.com/DanielKrafzik/PokedexV2',
+      live: 'https://pokedex-dk.web.app'
     }
   ];
 
