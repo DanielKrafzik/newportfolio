@@ -52,6 +52,20 @@
       "TEXT": "Eine umfassende Datenbank aller Pokémon mit detaillierten Informationen, Werten und Entwicklungsstufen."
     }
   },
+  "COLLEAGUES": {
+    "SUBTITLE": "WAS ANDERE SAGEN:",
+    "TITLE": "Meinungen von Kollegen",
+
+    "C1": {
+      "TEXT": "Daniel ist ein äußerst zielstrebiger Kollege, der Herausforderungen nicht scheut und stets mit gutem Beispiel vorangeht. Mit seiner proaktiven Art motiviert er das Team und treibt Projekte erfolgreich voran.",
+      "ROLE": "Full Stack Entwickler"
+    },
+
+    "C2": {
+      "TEXT": "Daniel ist ein zuverlässiger und lösungsorientierter Teamkollege. Er übernahm Aufgaben eigenständig und löste sie schnell und freundlich, wodurch er unser Team spürbar unterstützt hat.",
+      "ROLE": "Frontend Entwickler"
+    }
+  },
   "CONTACT": {
     "SUBTITLE": "KONTAKT",
     "TITLE": "Bereit zusammenzuarbeiten?",

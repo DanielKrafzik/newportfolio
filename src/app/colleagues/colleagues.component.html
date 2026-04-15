@@ -2,31 +2,39 @@
     <div class="colleagues-upside">
         <div class="colleagues-header">
             <img src="/img/blue_arrow.png" alt="">
-            <h2>IN THEIR WORDS:</h2>
+            <h2>{{ 'COLLEAGUES.SUBTITLE' | translate }}</h2>
         </div>
-        <h1>Colleagues' Thoughts</h1>
+        <h1>{{ 'COLLEAGUES.TITLE' | translate }}</h1>
     </div>
 
     <div class="colleagues-downside">
         <div class="colleague1">
-            <p>blabla</p>
-            <div class="colleague-info">
-                <div>
-                    <h2>Hussein</h2>
-                    <p>Full Stack Developer</p>
+            <div class="ornaments">
+                <p class="colleague-text">{{ 'COLLEAGUES.C1.TEXT' | translate }}</p>
+                <div class="colleague-info">
+                    <div>
+                        <h2>Hussein</h2>
+                        <p class="colleague-role">{{ 'COLLEAGUES.C1.ROLE' | translate }}</p>
+                    </div>
+                    <a href="" target="_blank" class="no-link">
+                        <img src="/img/linkedin_button.png" alt="LinkedIn">
+                    </a>            
                 </div>
-                <img src="/img/linkedin_button.png" alt="">
             </div>
         </div>
         <div class="colleague2">
-            <p>rababa</p>
-            <div class="colleague-info">
-                <div>
-                    <h2>Kadir</h2>
-                    <p>Frontend Developer</p>
+            <div class="ornaments">
+                <p class="colleague-text">{{ 'COLLEAGUES.C2.TEXT' | translate }}</p>
+                <div class="colleague-info">
+                    <div>
+                        <h2>Kadir</h2>
+                        <p class="colleague-role">{{ 'COLLEAGUES.C2.ROLE' | translate }}</p>       
+                    </div>         
+                    <a href="https://www.linkedin.com/in/kadir-saliu-0a783a353/?skipRedirect=true" target="_blank" (mouseenter)="hover = true" (mouseleave)="hover = false">
+                        <img [src]="hover ? '/img/linkedin_button_hover.png' : '/img/linkedin_button.png'" alt="LinkedIn">
+                    </a>
                 </div>
-                <img src="/img/linkedin_button.png" alt="">
-            </div>
+            </div>            
         </div>
     </div>
 </div>

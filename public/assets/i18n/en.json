@@ -52,6 +52,20 @@
       "TEXT": "A comprehensive database of all Pokémon species, featuring detailed information, stats, and evolutionary chains."
     }
   },
+  "COLLEAGUES": {
+    "SUBTITLE": "IN THEIR WORDS:",
+    "TITLE": "Colleagues' Thoughts",
+
+    "C1": {
+      "TEXT": "Daniel is a highly driven colleague who is not afraid of challenges and consistently leads by example. With his proactive mindset, he motivates the team and drives projects to success.",
+      "ROLE": "Full Stack Developer"
+    },
+
+    "C2": {
+      "TEXT": "Daniel is a reliable and solution-oriented team member. He independently took on tasks and solved them quickly and efficiently, making a valuable contribution to the team.",
+      "ROLE": "Frontend Developer"
+    }
+  },
   "CONTACT": {
     "SUBTITLE": "CONTACT ME",
     "TITLE": "Ready to work together?",
