@@ -217,3 +217,11 @@
         }
     }
 }
+
+@media (max-height: 700px) {
+    .about-me-content {
+        a {
+            margin-top: 0;
+        }
+    }
+}

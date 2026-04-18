@@ -209,3 +209,15 @@
         margin-top: -60px;
     }
 }
+
+@media (max-height: 800px) {
+    .project-detail-container {
+        height: 120vh;
+    }
+}
+
+@media (max-height: 700px) {
+    .project-detail-container {
+        height: 140vh;
+    }
+}
