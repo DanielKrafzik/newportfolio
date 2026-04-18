@@ -217,3 +217,23 @@
         }
     }
 }
+
+@media (max-height: 850px) {
+    #profile-pic {
+        bottom: 75px;
+    }
+
+    .greeting {
+        margin-top: 5vh;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .start-text-div {
+        a {
+            margin-top: 0;
+        }
+    }
+}
