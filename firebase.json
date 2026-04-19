@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!**/*.php",
         "destination": "/index.html"
       }
     ]

@@ -27,24 +27,42 @@
                             ? placeholders.nameError 
                             : placeholders.name"
                         />
-                        <div *ngIf="name.invalid && name.touched" class="error-message">
+                        <div [class.visible]="name.invalid && name.touched" class="error-message">
                         {{ placeholders.nameError }}
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
-                        <input id="email" [(ngModel)]="contactData.email" type="email" name="email" #email="ngModel" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                            [placeholder]="email.invalid && email.touched 
-                                ? placeholders.emailError 
-                                : placeholders.email" required>
+                        <input 
+                        id="email" 
+                        [(ngModel)]="contactData.email" 
+                        (ngModelChange)="onMailChange($event)"
+                        name="email" 
+                        #email="ngModel" 
+                        required 
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        [placeholder]="email.invalid && email.touched 
+                            ? placeholders.emailError 
+                            : placeholders.email" required>
+                        <div [class.visible]="email.invalid && email.touched" class="error-message">
+                            {{ placeholders.emailError }}
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="message">{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
-                        <textarea id="message" [(ngModel)]="contactData.message" name="message" #message="ngModel" 
-                            [placeholder]="message.invalid && message.touched 
+                        <textarea 
+                        id="message" 
+                         #message="ngModel"    
+                        [(ngModel)]="contactData.message" 
+                        (ngModelChange)="onMessageChange($event)"
+                        name="message"                         
+                        [placeholder]="message.invalid && message.touched 
                             ? placeholders.messageError 
                             : placeholders.message" 
-                            minlength="10" maxlength="500" required></textarea>
+                        minlength="10" maxlength="500" required pattern=".*\S.*"></textarea>
+                        <div [class.visible]="message.invalid && message.touched" class="error-message">
+                            {{ placeholders.messageError }}
+                        </div>
                     </div>
                     <div class="contact-form-checkbox">
                         <img src="/img/checkmark_empty.png" alt="" (click)="checkBox()" [src]="isHover ? boxPathHover : boxPath" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
@@ -64,4 +82,8 @@
         </div>
         <app-footer theme="light"></app-footer>
     </div>
+</div>
+
+<div class="toast" [class.show]="successMessageVisible">
+  ✔ Message sent successfully!
 </div>

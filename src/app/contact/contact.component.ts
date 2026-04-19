@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -17,18 +18,20 @@ export class ContactComponent implements OnInit {
   boxPath: string = '/img/checkmark_empty.png';
   boxPathHover: string = '/img/checkmark_empty_hover.png';
   boxChecked: boolean = false;
+  successMessageVisible = false;
 
   checkBox() {
     if(this.boxPath === '/img/checkmark_empty.png') {
       this.boxPath = '/img/checkmark_checked.png';
       this.boxPathHover = '/img/checkmark_checked_hover.png';
       this.boxChecked = true;
-      document.getElementById('privacy-policy-error')!.style.display = 'none';    
+      document.getElementById('privacy-policy-error')!.style.opacity = '0';    
     } else {
       this.boxPath = '/img/checkmark_empty.png';
       this.boxPathHover = '/img/checkmark_empty_hover.png';
       this.boxChecked = false;
-      document.getElementById('privacy-policy-error')!.style.display = 'block';
+      document.getElementById('privacy-policy-error')!.style.opacity = '1';
+      document.getElementById('privacy-policy-error')!.style.visibility = 'visible';
     }
   }
 
@@ -53,28 +56,66 @@ export class ContactComponent implements OnInit {
     },
   };
 
-  onNameChange(value: string) {
-    this.contactData.name = value.replace(/^\s+/, '');
+  onNameChange(value: string | null | undefined) {
+    this.contactData.name = (value ?? '').replace(/^\s+/, '');
+    this.contactData.name = this.contactData.name.trim();
   }
+
+  onMailChange(value: string | null | undefined) {
+    this.contactData.email = (value ?? '').replace(/^\s+/, '');
+    this.contactData.email = this.contactData.email.trim();
+  }
+
+  onMessageChange(value: string | null | undefined) {
+  let v = value ?? '';
+
+  // führende Leerzeichen entfernen
+  v = v.replace(/^\s+/, '');
+
+  // 🔥 mehrere Leerzeichen zu einem reduzieren
+  v = v.replace(/ {2,}/g, ' ');
+
+  // optional: Tabs + Zeilenumbrüche auch sauber machen
+  v = v.replace(/\t+/g, ' ');
+
+  // final trim (falls doch noch was am Ende hängt)
+  v = v.replace(/\s+/g, ' ').trim();
+
+  this.contactData.message = v;
+}
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
+    if (ngForm.valid && this.boxChecked) {
 
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    const templateParams = {
+      from_name: this.contactData.name,
+      from_email: this.contactData.email,
+      message: this.contactData.message
+    };
 
+    emailjs.send(
+      'service_3ydo17x',
+      'template_pvxpsqp',
+      templateParams,
+      'CtZo7Q6kse3UhLHdQ'
+    ).then(() => {
+
+      this.boxPath = '/img/checkmark_empty.png';
+      this.boxPathHover = '/img/checkmark_empty_hover.png';
+      this.boxChecked = false;
       ngForm.resetForm();
-    }
+
+      this.successMessageVisible = true;
+
+      setTimeout(() => {
+        this.successMessageVisible = false;
+      }, 3000);
+
+    }).catch((error) => {
+      console.error('FAILED...', error);
+    });
   }
+}
 
   placeholders = {
     name: '',

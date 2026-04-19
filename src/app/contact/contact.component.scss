@@ -163,12 +163,15 @@ label {
 .error-message {
     color: #ff3a00;
     font-size: 14px;
-    margin-top: 10px;
-    height: 20px;
+    min-height: 20px;
+    opacity: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#privacy-policy-error {
-    display: none;
+.error-message.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile {
@@ -261,4 +264,26 @@ textarea.ng-touched.ng-invalid::placeholder {
     .footer-wrapper {
         width: 95%;
     }
+}
+
+/* Toast message styles */
+
+.toast {
+  position: fixed;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }

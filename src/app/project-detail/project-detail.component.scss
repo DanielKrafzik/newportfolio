@@ -1,5 +1,5 @@
 .project-detail-container {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('/img/project-details_component.png');
     background-size: cover;
     background-position: center bottom;
@@ -15,6 +15,7 @@
 }
 
 .project-detail-content {
+    margin-top: 20vh;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -222,28 +223,13 @@
 
 @media (max-width: 380px) {
     .project-detail-description {
-        background-color: transparent;
         padding: 0;
-        margin-top: -60px;
     }
 }
 
-@media (max-height: 800px) {
-    .project-detail-container {
-        height: 120vh;
-    }
-
+@media (max-height: 8600px) {
     #next-btn {
-        bottom: -5%;
+        bottom: 0;
     }
 }
 
-@media (max-height: 700px) {
-    .project-detail-container {
-        height: 140vh;
-    }
-
-    #next-btn {
-        bottom: -20%;
-    }
-}
