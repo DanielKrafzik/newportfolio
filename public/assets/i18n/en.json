@@ -118,6 +118,24 @@
 
     "INDEMNITY_TEXT": "You agree to indemnify and hold harmless the creators of this portfolio against any claims."
   },
+  "PRIVACY": {
+    "PRIVACY_TITLE": "Privacy Policy",
+
+    "PRIVACY_COLLECTION": "Data Collection",
+    "PRIVACY_CONTACT": "Contact Form",
+    "PRIVACY_HOSTING": "Hosting",
+    "PRIVACY_RIGHTS": "Your Rights",
+
+    "PRIVACY_TEXT_1": "This website is operated as a personal portfolio. Protecting your personal data is very important to me. This privacy policy explains what data is collected and how it is used.",
+
+    "PRIVACY_TEXT_2": "When visiting this website, basic technical information such as your browser type, operating system, and access time may be automatically collected. This data is used solely to ensure the proper functioning and security of the website.",
+
+    "PRIVACY_TEXT_3": "If you contact me via the contact form, the information you provide (such as your name, email address, and message) will be used solely for the purpose of processing your request. This data will not be shared with third parties.",
+
+    "PRIVACY_TEXT_4": "This website is hosted using Firebase Hosting. The hosting provider may collect and store server log files, which include information such as IP addresses and access times. These logs are used for security and technical purposes.",
+
+    "PRIVACY_TEXT_5": "You have the right to request information about your stored data, as well as the correction or deletion of your data. If you have any questions regarding your data, you can contact me at any time."
+  },
   "PROJECT_DETAIL": {
     "DESCRIPTION": "Description",
     "IMPLEMENTATION": "Implementation Details",

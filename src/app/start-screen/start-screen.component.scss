@@ -239,9 +239,19 @@
         }
     }
 
+    #profile-pic {
+        top: 300px;
+    }
+
     .start-text-div {
         a {
             margin-top: 0;
         }
     }
+}
+
+@media (max-height: 600px) {
+    .start-screen-div {
+        height: 140vh;
+    }    
 }

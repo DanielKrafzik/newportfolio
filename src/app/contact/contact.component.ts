@@ -4,10 +4,11 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
-  imports: [FooterComponent, FormsModule, TranslateModule, RouterLink],
+  imports: [FooterComponent, FormsModule, TranslateModule, RouterLink, NgIf],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -39,7 +40,7 @@ export class ContactComponent implements OnInit {
     message: ''
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://danielkrafzik.com/sendMail.php',
@@ -51,6 +52,10 @@ export class ContactComponent implements OnInit {
       },
     },
   };
+
+  onNameChange(value: string) {
+    this.contactData.name = value.replace(/^\s+/, '');
+  }
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {

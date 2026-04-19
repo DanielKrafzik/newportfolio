@@ -160,11 +160,14 @@ label {
     }
 }
 
-#privacy-policy-error {
+.error-message {
     color: #ff3a00;
     font-size: 14px;
     margin-top: 10px;
     height: 20px;
+}
+
+#privacy-policy-error {
     display: none;
 }
 

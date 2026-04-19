@@ -1,5 +1,5 @@
 .colleagues-div {
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,13 +144,13 @@
     }
 
     .colleagues-div {
-        min-height: 75vh;
+        min-height: 55vh;
     }
 }
 
 @media (min-width: 3000px) {
     .colleagues-div {
-        min-height: 50vh;
+        min-height: 40vh;
     }
 }
 

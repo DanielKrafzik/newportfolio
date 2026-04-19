@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     background: url(/img/skills_background.png);
     background-size: cover;
     background-position: center bottom;
@@ -52,8 +52,8 @@
 .skillset-icons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
-    width: 60%;
+    gap: 50px;
+    width: 100%;
 }
 
 .skillset-icon {
@@ -109,7 +109,7 @@
 
 @media (min-width: 1760px) {
     .skillset-container {
-        height: 75vh;
+        height: 50vh;
     }
 
     .skillset-content {
@@ -189,5 +189,15 @@
         img {
             width: 150px;
         }
+    }
+}
+
+@media (max-height: 750px) {
+    .skillset-container {
+        height: auto;
+    }
+
+    .skillset-content {
+        margin-bottom: 40px;
     }
 }

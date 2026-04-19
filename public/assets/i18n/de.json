@@ -118,6 +118,24 @@
 
     "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, die Ersteller dieses Portfolios von Ansprüchen freizustellen."
   },
+  "PRIVACY": {
+    "PRIVACY_TITLE": "Datenschutzerklärung",
+
+    "PRIVACY_COLLECTION": "Datenerfassung",
+    "PRIVACY_CONTACT": "Kontaktformular",
+    "PRIVACY_HOSTING": "Hosting",
+    "PRIVACY_RIGHTS": "Ihre Rechte",
+
+    "PRIVACY_TEXT_1": "Diese Website wird als persönliches Portfolio betrieben. Der Schutz Ihrer persönlichen Daten ist mir sehr wichtig. In dieser Datenschutzerklärung wird erläutert, welche Daten erfasst und wie sie verwendet werden.",
+
+    "PRIVACY_TEXT_2": "Beim Besuch dieser Website können automatisch technische Daten wie Browsertyp, Betriebssystem und Uhrzeit des Zugriffs erfasst werden. Diese Daten dienen ausschließlich der Sicherstellung eines störungsfreien Betriebs der Website.",
+
+    "PRIVACY_TEXT_3": "Wenn Sie mich über das Kontaktformular kontaktieren, werden die von Ihnen angegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte erfolgt nicht.",
+
+    "PRIVACY_TEXT_4": "Diese Website wird über Firebase Hosting betrieben. Der Hosting-Anbieter kann Server-Logfiles erfassen, die z. B. IP-Adressen und Zugriffszeiten enthalten. Diese Daten dienen ausschließlich technischen und sicherheitsrelevanten Zwecken.",
+
+    "PRIVACY_TEXT_5": "Sie haben das Recht, Auskunft über Ihre gespeicherten Daten zu erhalten sowie die Berichtigung oder Löschung Ihrer Daten zu verlangen. Bei Fragen können Sie sich jederzeit an mich wenden."
+  },
   "PROJECT_DETAIL": {
     "DESCRIPTION": "Beschreibung",
     "IMPLEMENTATION": "Umsetzung",

@@ -1,5 +1,5 @@
 .about-me-container {
-    height: 100vh;
+    height: 50vh;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -132,7 +132,7 @@
 @media(min-width: 1760px) {
     .about-me-container {
         max-width: 1400px;
-        height: 75vh;
+        height: 50vh;
 }
 
     .about-me-images {
@@ -143,6 +143,10 @@
 @media(max-width: 1200px) {
     .about-me-div {
         flex-direction: column;;
+    }
+
+    .about-me-container {
+        height: auto;
     }
     
     .about-me-content {

@@ -14,10 +14,22 @@
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="form-group">
                         <label for="name" >{{ 'CONTACT.NAME_LABEL' | translate }}</label>
-                        <input id="name" [(ngModel)]="contactData.name" name="name" #name="ngModel" 
+                        <input 
+                        id="name"
+                        [(ngModel)]="contactData.name"
+                        (ngModelChange)="onNameChange($event)"
+                        name="name"
+                        #name="ngModel"
+                        required
+                        minlength="2"
+                        pattern="^\S.{1,}$"
                         [placeholder]="name.invalid && name.touched 
                             ? placeholders.nameError 
-                            : placeholders.name" required>
+                            : placeholders.name"
+                        />
+                        <div *ngIf="name.invalid && name.touched" class="error-message">
+                        {{ placeholders.nameError }}
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
@@ -38,7 +50,7 @@
                         <img src="/img/checkmark_empty.png" alt="" (click)="checkBox()" [src]="isHover ? boxPathHover : boxPath" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
                         <p>
                             {{ 'CONTACT.PRIVACY_TEXT' | translate }}
-                            <a routerLink="/legal-notice">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+                            <a routerLink="/privacy">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
                             {{ 'CONTACT.PRIVACY_TEXT2' | translate }}
                         </p>
                     </div>
