@@ -38,7 +38,7 @@
                         <img src="/img/checkmark_empty.png" alt="" (click)="checkBox()" [src]="isHover ? boxPathHover : boxPath" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
                         <p>
                             {{ 'CONTACT.PRIVACY_TEXT' | translate }}
-                            <a href="">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+                            <a routerLink="/legal-notice">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
                             {{ 'CONTACT.PRIVACY_TEXT2' | translate }}
                         </p>
                     </div>

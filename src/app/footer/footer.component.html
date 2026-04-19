@@ -12,15 +12,15 @@
             <a id="legal-notice" routerLink="/legal-notice" class="hover-link desktop">{{ 'FOOTER.LEGAL' | translate }}</a>
             <div class="link-div">
                 <img src="/img/github_icon.png" alt="" class="link-icon" [class.show]="hover === 1">
-                <a href="" id="github-link" class="hover-link" (mouseenter)="hover = 1" (mouseleave)="hover = 0">GitHub</a>
+                <a href="https://github.com/DanielKrafzik" target="_blank" id="github-link" class="hover-link" (mouseenter)="hover = 1" (mouseleave)="hover = 0">GitHub</a>
             </div>
             <div class="link-div">
                 <img src="/img/linkedin_icon.png" alt="" class="link-icon" [class.show]="hover === 2">
-                <a href="" id="linkedin-link" class="hover-link" (mouseenter)="hover = 2" (mouseleave)="hover = 0">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/daniel-krafzik-4b7155345/" target="_blank" id="linkedin-link" class="hover-link" (mouseenter)="hover = 2" (mouseleave)="hover = 0">LinkedIn</a>
             </div>
             <div class="link-div">
                 <img src="/img/mail_icon.png" alt="" class="link-icon" [class.show]="hover === 3">
-                <a href="" id="email-link" class="hover-link" (mouseenter)="hover = 3" (mouseleave)="hover = 0">Email</a>
+                <a routerLink="/contact" id="email-link" class="hover-link" (mouseenter)="hover = 3" (mouseleave)="hover = 0">Email</a>
             </div>
         </nav>
     </div>

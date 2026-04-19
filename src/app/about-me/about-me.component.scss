@@ -111,6 +111,7 @@
 
     img {
         margin-bottom: 24px;
+        width: 50%;
     }
 
     a {
@@ -168,7 +169,7 @@
     }
 
     .bluepaper-div {
-        aspect-ratio: 4 / 1;
+        aspect-ratio: 4.5 / 1;
     }
 }
 
@@ -179,14 +180,18 @@
 }
 
 @media (max-width: 440px) {
-    .about-me-images {
-        p {
-            font-size: 14px;
-        }
+    .yellowpaper-div,
+    .pinkpaper-div {
+        aspect-ratio: 2.5 / 1;
+    }
+
+    .bluepaper-div {
+        aspect-ratio: 3.5 / 1;
     }
 
     .yellowpaper-div {
         img {
+            margin-left: 15px;
             margin-right: -30px;
         }
     }
@@ -207,14 +212,6 @@
 
         img {
             max-width: 100%;
-        }
-    }
-}
-
-@media (max-width: 380px) {
-    .about-me-images {
-        p{
-            font-size: 11px;
         }
     }
 }

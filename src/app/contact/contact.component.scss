@@ -207,6 +207,14 @@ textarea.ng-touched.ng-invalid::placeholder {
     color: #ff3a00;
 }
 
+@media (max-width: 1560px) {
+    .contact-info {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .contact-div {
         height: auto;
