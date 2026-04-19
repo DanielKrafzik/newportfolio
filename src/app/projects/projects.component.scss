@@ -161,6 +161,10 @@
     .projects-upside, .projects-downside {
         max-width: 1400px;
     }
+
+    .projects-div {
+        min-height: 75vh;
+    }
 }
 
 @media (max-width: 768px) {

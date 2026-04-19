@@ -142,6 +142,16 @@
     .colleagues-downside {
         max-width: 1400px;
     }
+
+    .colleagues-div {
+        min-height: 75vh;
+    }
+}
+
+@media (min-width: 3000px) {
+    .colleagues-div {
+        min-height: 50vh;
+    }
 }
 
 @media (max-width: 1000px) {

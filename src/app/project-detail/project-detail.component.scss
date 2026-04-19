@@ -146,6 +146,16 @@
     .project-detail-content {
         max-width: 1400px;
     }
+
+    #go-back-btn {
+        left: 50%;
+        transform: translateX(-700px);
+    }
+
+    #next-btn {
+        right: 50%;
+        transform: translateX(700px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -220,10 +230,18 @@
     .project-detail-container {
         height: 120vh;
     }
+
+    #next-btn {
+        bottom: -5%;
+    }
 }
 
 @media (max-height: 700px) {
     .project-detail-container {
         height: 140vh;
+    }
+
+    #next-btn {
+        bottom: -20%;
     }
 }

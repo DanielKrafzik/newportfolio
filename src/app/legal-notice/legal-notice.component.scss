@@ -46,6 +46,22 @@ app-footer {
     width: 100%;
 }
 
+@media (min-width: 1760px) {
+    .legal-notice-content,
+    .footer-wrapper {
+        max-width: 1400px;
+    }
+
+    .legal-notice-header {
+        h1 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-700px);
+            margin-left: 0;
+        }
+    }
+}
+
 @media (max-width: 580px) {
     .footer-wrapper,
     .legal-notice-content {

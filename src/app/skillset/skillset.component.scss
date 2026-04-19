@@ -107,6 +107,16 @@
     display: block;
 }
 
+@media (min-width: 1760px) {
+    .skillset-container {
+        height: 75vh;
+    }
+
+    .skillset-content {
+        width: 1400px;
+    }
+}
+
 @media (max-width: 1385px) {
     .skillset-title {
         h1 {
