@@ -6,6 +6,7 @@
     background: url(/img/skills_background.png);
     background-size: cover;
     background-position: center bottom;
+    margin: 140px 0;
 }
 
 .skillset-content {
@@ -14,7 +15,6 @@
     align-items: center;
     gap: 40px;
     width: 80%;
-    margin-top: 20px;
 }
 
 .skillset-upside {
@@ -110,7 +110,7 @@
 
 @media (min-width: 1760px) {
     .skillset-container {
-        height: 50vh;
+        height: 60vh;
     }
 
     .skillset-content {

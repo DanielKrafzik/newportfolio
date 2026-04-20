@@ -3,10 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { NgIf, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [NgIf, NgFor, RouterLink, TranslateModule],
+  imports: [NgIf, NgFor, RouterLink, TranslateModule, HeaderComponent],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss'
 })

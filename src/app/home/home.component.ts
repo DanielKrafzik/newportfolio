@@ -5,6 +5,7 @@ import { SkillsetComponent } from '../skillset/skillset.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ColleaguesComponent } from '../colleagues/colleagues.component';
 import { ContactComponent } from '../contact/contact.component';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { ContactComponent } from '../contact/contact.component';
     SkillsetComponent,
     ProjectsComponent,
     ColleaguesComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

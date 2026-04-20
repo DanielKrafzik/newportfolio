@@ -20,6 +20,11 @@
 .colleagues-header {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    img {
+        height: 36px;
+    }
 }
 
 .colleagues-downside {

@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
+import { Input } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [TranslateModule, RouterLink],
+  imports: [TranslateModule, RouterLink, NgClass],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   currentLang: 'en' | 'de' = 'en';
   currentLangIcon = '/img/toggle_en.png';
+
+  @Input() theme: 'light' | 'dark' = 'light';
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('en');

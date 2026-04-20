@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 140px 0;
 
     a {
         text-align: center;
@@ -129,6 +130,12 @@
     min-height: 60vh;
 }
 
+@media (min-width: 2500px) {
+    .about-me-container {
+        margin: 0;
+    }
+}
+
 @media(min-width: 1760px) {
     .about-me-container {
         max-width: 1400px;
@@ -147,6 +154,7 @@
 
     .about-me-container {
         height: auto;
+        margin: 90px 0;
     }
     
     .about-me-content {
