@@ -45,7 +45,8 @@
     margin-top: 10%;
 
     input {
-        padding: 10px 0px;
+        padding: 10px 0 10px 10px;
+        box-sizing: border-box;
         width: 100%;
         background-color: transparent;
         border: none;
@@ -61,7 +62,8 @@
     }
 
     textarea {
-        padding: 10px 0px;
+        padding: 10px;
+        box-sizing: border-box;
         width: 100%;
         background-color: transparent;
         border: none;
@@ -138,6 +140,7 @@ label {
     font-size: 24px;
     margin-bottom: 10px;
     cursor: none;
+    padding-left: 10px;
 }
 
 .form-group:hover {
@@ -263,6 +266,14 @@ textarea.ng-touched.ng-invalid::placeholder {
 @media (max-width: 580px) {
     .footer-wrapper {
         width: 95%;
+    }
+}
+
+@media (max-width: 350px) {
+    .contact-info {
+        h1 {
+            font-size: 27px;
+        }
     }
 }
 

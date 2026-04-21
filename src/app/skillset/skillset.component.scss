@@ -73,7 +73,8 @@
 
 .skillset-description {
     background: url('/img/paperframe_skill.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 25px;
     display: flex;
@@ -115,6 +116,10 @@
 
     .skillset-content {
         width: 1400px;
+    }
+
+    .skillset-description {
+        padding: 25px 50px;
     }
 }
 
@@ -200,5 +205,11 @@
 
     .skillset-content {
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 330px) {
+    .skillset-icons {
+        gap: 45px;
     }
 }
