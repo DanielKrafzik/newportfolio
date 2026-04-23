@@ -160,8 +160,7 @@
     }
 
     .about-me-container {
-        height: auto;
-        margin: 90px 0;
+        height: 90vh;
     }
     
     .about-me-content {
@@ -238,7 +237,7 @@
 @media (max-height: 700px) {
     .about-me-content {
         a {
-            margin-top: 0;
+            margin-top: 16px;
         }
     }
 }

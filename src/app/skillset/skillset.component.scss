@@ -178,7 +178,8 @@ p {
 
 @media (max-width: 940px) {
     .skillset-upside {
-        flex-direction: column;;
+        flex-direction: column;
+        margin-top: 95px;
     }
 
     .skillset-title {
@@ -251,7 +252,7 @@ p {
     }
 
     .skillset-icons {
-        gap: 35px;
+        gap: 35px 0px;
     }
 }
 

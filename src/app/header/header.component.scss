@@ -5,7 +5,7 @@
   height: 75px;
   background-color: transparent;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   position: absolute;
   width: 100%;
 }
@@ -203,6 +203,10 @@
         max-width: 1400px;
         margin-left: 50%;
         transform: translateX(-700px);
+        justify-content: space-between;
+    }
+    .nav-links {
+      width: 90%;
     }
   }
 
@@ -261,12 +265,16 @@
   }
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 2400px) {
   header.dark {
   .nav-links {
     #skills-link {
       color: white;
     }
   }
+}
+.nav-links {
+  width: 75%;
+  padding: 0 200px;
 }
 }

@@ -249,9 +249,7 @@
         }
     }
 
-    #profile-pic {
-        top: 300px;
-    }
+    
 
     .start-text-div {
         a {
@@ -264,4 +262,13 @@
     .start-screen-div {
         height: 140vh;
     }  
+}
+
+@media (max-height: 750px) {
+    .start-screen-content {
+        margin-top: 5vh;
+    }
+    #profile-pic {
+        top: 350px;
+    }
 }
