@@ -29,7 +29,7 @@ export class ProjectDetailComponent {
 
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       next: 'sharkie',
-      github: 'https://github.com/DanielKrafzik/join',
+      github: 'https://github.com/DanielKrafzik/joinV2',
       live: 'https://join-app-dk.web.app'
     },
     {
