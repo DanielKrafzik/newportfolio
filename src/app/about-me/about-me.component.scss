@@ -103,9 +103,10 @@
     justify-content: center;
     p {
         margin-bottom: 0;
+        font-size: 20px;
     }
     h1 {
-        font-size: 48px;
+        font-size: 64px;
         margin-bottom: 0;
         margin-top: 16px;
     }
@@ -144,6 +145,12 @@
 
     .about-me-images {
         min-height: 40vh;
+    }
+}
+
+@media (min-width: 2300px) {
+    .about-me-container {
+        height: 40vh;
     }
 }
 

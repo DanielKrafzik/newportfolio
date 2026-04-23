@@ -109,6 +109,7 @@
     display: block;
 }
 
+
 @media (min-width: 1760px) {
     .skillset-container {
         height: 80vh;
@@ -120,6 +121,26 @@
 
     .skillset-description {
         padding: 25px 50px;
+    }
+}
+
+@media (min-width: 2300px) {
+    .skillset-container {
+        height: 60vh;
+    }
+    .skillset-title {
+        h1 {
+            font-size: 64px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 300px;
+            padding: 20px 60px 20px 10px;
+            margin-left: -120px;
+        }
+    }
+
+    .skillset-description {
+        width: 644px;
     }
 }
 
@@ -138,7 +159,13 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+    .skillset-description {
+        width: 644px;
+    }
+}
+
+@media (max-width: 940px) {
     .skillset-upside {
         flex-direction: column;;
     }
@@ -182,6 +209,14 @@
     }
 }
 
+@media (max-width: 750px) {
+    .skillset-description {
+        width: 343px;
+        height: 212px;
+        background-size: cover;
+    }
+}
+
 @media (max-width: 580px) {
     .skillset-content {
         width: 95%;
@@ -195,6 +230,12 @@
         img {
             width: 150px;
         }
+    }
+}
+
+@media (max-width: 440px) {
+    .skillset-description {
+        width: 220px;
     }
 }
 
