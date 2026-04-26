@@ -165,7 +165,7 @@ label {
 
 .error-message {
     color: #ff3a00;
-    font-size: 14px;
+    font-size: 16px;
     min-height: 20px;
     opacity: 0;
     margin-top: 5px;
@@ -183,6 +183,14 @@ label {
 
 .desktop {
     display: block;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 9999s ease-out;
 }
 
 app-footer {

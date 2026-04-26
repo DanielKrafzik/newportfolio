@@ -11,7 +11,7 @@
             </div>
 
             <div class="contact-form">
-                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" autocomplete="off">
                     <div class="form-group">
                         <label for="name" >{{ 'CONTACT.NAME_LABEL' | translate }}</label>
                         <input 
@@ -22,10 +22,11 @@
                         #name="ngModel"
                         required
                         minlength="2"
-                        pattern="^\S.{1,}$"
+                        pattern="^[A-Za-zÄÖÜäöüß]+$"
                         [placeholder]="name.invalid && name.touched 
                             ? placeholders.nameError 
                             : placeholders.name"
+                            autocomplete="new-password"
                         />
                         <div [class.visible]="name.invalid && name.touched" class="error-message">
                         {{ placeholders.nameError }}
@@ -40,10 +41,10 @@
                         name="email" 
                         #email="ngModel" 
                         required 
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        pattern="^[a-zA-Z0-9._%+\-]+@([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,}$"
                         [placeholder]="email.invalid && email.touched 
                             ? placeholders.emailError 
-                            : placeholders.email" required>
+                            : placeholders.email" required autocomplete="new-password">
                         <div [class.visible]="email.invalid && email.touched" class="error-message">
                             {{ placeholders.emailError }}
                         </div>
@@ -59,7 +60,7 @@
                         [placeholder]="message.invalid && message.touched 
                             ? placeholders.messageError 
                             : placeholders.message" 
-                        minlength="10" maxlength="500" required pattern=".*\S.*"></textarea>
+                        minlength="10" maxlength="500" required pattern=".*\S.*" autocomplete="off"></textarea>
                         <div [class.visible]="message.invalid && message.touched" class="error-message">
                             {{ placeholders.messageError }}
                         </div>

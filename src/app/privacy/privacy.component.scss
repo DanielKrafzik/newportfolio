@@ -1,7 +1,7 @@
 .privacy {
-    min-height: 100vh;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 
@@ -40,6 +40,11 @@
 
 .footer-wrapper {
     width: 80%;
+}
+
+:host {
+    display: block;
+    height: 100vh;
 }
 
 app-footer {

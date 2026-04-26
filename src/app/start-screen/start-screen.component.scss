@@ -118,6 +118,7 @@
     width: 200px;
     transition: transform 0.2s ease;
     transform: rotate(10deg);
+    margin-bottom: 20px;
 }
 
 #profile-pic:hover {
@@ -170,17 +171,6 @@
         transform: translateX(-700px);
     }
 }
-
-@media (min-width: 2560px) {
-    .start-screen-div {
-        height: 75vh;
-    }
-
-    .contact-links {
-        bottom: 50%;
-    }
-}
-
 
 @media (max-width: 1135px) {
     .start-screen-content {

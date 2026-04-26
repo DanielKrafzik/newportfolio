@@ -16,7 +16,10 @@
         <p>{{ currentProject.workflowKey | translate }}</p>
         <p><span id="span-duration">{{ 'PROJECT_DETAIL.DURATION' | translate }}</span> {{ currentProject.durationKey | translate }}</p>
         <div class="tech-div">
-            <span *ngFor="let tech of currentProject.technologies">{{ tech }}</span>
+            <div *ngFor="let tech of currentProject.technologies" class="tech-item">
+              <img [src]="tech.img" alt="">
+              <span>{{ tech.name }}</span>
+            </div>
         </div>
     </div>
 

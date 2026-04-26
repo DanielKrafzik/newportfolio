@@ -14,12 +14,14 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
     margin: 0;
     font-family: 'Bricolage Grotesque', sans-serif;
     cursor: none;
+    height: 100%;
 }
 
 a, button, input, textarea {

@@ -48,6 +48,19 @@ p {
     }    
 }
 
+.tech-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+
+    img {
+        height: 25px;
+        width: auto;
+        margin-right: 4px;
+    }
+}
+
 .detail-btn-div {
     display: flex;
     gap: 48px;
@@ -229,5 +242,33 @@ p {
 @media (max-width: 380px) {
     .project-detail-description {
         padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .tech-item {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4px;
+        margin-right: 4px;
+
+        img {
+            display: flex;
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .tech-item {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4px;
+        margin-right: 4px;
+
+        img {
+            display: flex;
+            align-self: flex-start;
+        }
     }
 }

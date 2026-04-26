@@ -27,7 +27,13 @@ export class ProjectDetailComponent {
       workflowKey: 'PROJECT_DETAIL.JOIN.WORKFLOW',
       durationKey: 'PROJECT_DETAIL.JOIN.DURATION',
 
-      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
+      technologies: [
+        { name: 'Angular', img: '/img/skill5.png' },
+        { name: 'TypeScript', img: '/img/skill4.png' },
+        { name: 'HTML', img: '/img/skill1.png' },
+        { name: 'CSS', img: '/img/skill2.png' },
+        { name: 'Firebase', img: '/img/skill6.png' }
+      ],
       next: 'sharkie',
       github: 'https://github.com/DanielKrafzik/joinV2',
       live: 'https://join.daniel-krafzik.com'
@@ -41,7 +47,11 @@ export class ProjectDetailComponent {
       workflowKey: 'PROJECT_DETAIL.SHARKIE.WORKFLOW',
       durationKey: 'PROJECT_DETAIL.SHARKIE.DURATION',
 
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: [
+        { name: 'JavaScript', img: '/img/skill3.png' },
+        { name: 'HTML', img: '/img/skill1.png' },
+        { name: 'CSS', img: '/img/skill2.png' }
+      ],
       next: 'pokedex',
       github: 'https://github.com/DanielKrafzik/El-pollo-Loco',
       live: 'https://sharky.daniel-krafzik.com'
@@ -55,7 +65,11 @@ export class ProjectDetailComponent {
       workflowKey: 'PROJECT_DETAIL.POKEDEX.WORKFLOW',
       durationKey: 'PROJECT_DETAIL.POKEDEX.DURATION',
 
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: [
+        { name: 'JavaScript', img: '/img/skill3.png' },
+        { name: 'HTML', img: '/img/skill1.png' },
+        { name: 'CSS', img: '/img/skill2.png' }
+      ],
       next: 'join',
       github: 'https://github.com/DanielKrafzik/PokedexV2',
       live: 'https://pokedex.daniel-krafzik.com'
