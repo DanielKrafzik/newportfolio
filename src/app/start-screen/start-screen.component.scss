@@ -248,7 +248,7 @@
     }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 600px) and (max-width: 768px) {
     .start-screen-div {
         height: 140vh;
     }  
@@ -260,5 +260,11 @@
     }
     #profile-pic {
         top: 350px;
+    }
+}
+
+@media (min-height: 400px) and (max-height: 600px) {
+    .start-screen-div {
+        margin-bottom: 50px;
     }
 }

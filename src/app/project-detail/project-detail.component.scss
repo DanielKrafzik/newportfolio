@@ -272,3 +272,15 @@ p {
         }
     }
 }
+
+@media (max-height: 750px) {
+    .project-detail-content {
+        margin-top: 100px;
+    }
+}
+
+@media (max-height: 600px) {
+    #next-btn {
+        bottom: 2%;
+    }
+}

@@ -22,7 +22,7 @@
                         #name="ngModel"
                         required
                         minlength="2"
-                        pattern="^[A-Za-zÄÖÜäöüß]+$"
+                        pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß]+(?:[ '\\-][A-Za-zÀ-ÖØ-öø-ÿÄÖÜäöüß]+)*$"
                         [placeholder]="name.invalid && name.touched 
                             ? placeholders.nameError 
                             : placeholders.name"
