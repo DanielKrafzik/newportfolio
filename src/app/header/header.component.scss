@@ -210,8 +210,10 @@
     }
   }
 
-@media (max-width: 768px) {
-  .desktop {
+  
+
+@media (max-width: 1024px) {
+.desktop {
     display: none;
   }
 
@@ -219,7 +221,7 @@
     margin-right: 10px;
     display: flex;
   }
-
+  
   .header {
     justify-content: space-between;
   }
@@ -233,6 +235,9 @@
     margin: 20px 0;
   }
 
+}
+
+@media (max-width: 768px) {
   .contact-links {
     display: flex;
     gap: 20px;
@@ -279,12 +284,21 @@
 }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1180px) and (max-height: 1368px) {
+@media (max-width: 1600px) {
+  .nav-links {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1350px) {
+  .nav-links {
+    justify-content: space-around;
+  }
+  
   header.dark {
   .nav-links {
-    #projects-link,
-    #contact-link {
-      color: black;
+    #skills-link {
+      margin-left: -50px;
     }
   }
 }

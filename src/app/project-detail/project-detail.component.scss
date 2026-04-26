@@ -174,7 +174,7 @@ p {
         display: flex;
         flex-direction: column;
         background-image: url('/img/mobile_project_background.png');
-        object-position: center top;
+        background-position: center;
     }
     .project-detail-content {
         flex-direction: column;
@@ -231,4 +231,3 @@ p {
         padding: 0;
     }
 }
-
